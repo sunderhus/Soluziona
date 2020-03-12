@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: stretch;
+    padding:4em 0px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap: 2em;
+    .logo{
+        max-width: 292px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .menu-desktop{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin-right: 1em;
+            }
+        }
+    }
+}
