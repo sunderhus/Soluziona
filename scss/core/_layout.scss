@@ -12,6 +12,9 @@ body {
     flex-direction: column;
     position: relative;
 }
+*{
+    box-sizing: border-box;
+}
 
 header {
     flex-shrink: 0;
@@ -23,8 +26,12 @@ main {
 
 h2.titulo-secao {
     font-size: 51px;
-    text-align: center;
+    text-align: left;
     color: $azul-escuro;
+}
+.descricao-secao{
+    color: $azul-escuro;
+    font-size: $x-regular;
 }
 
 footer {
@@ -40,6 +47,9 @@ footer {
 
 @mixin neo-shadow {
     box-shadow: -5px -5px 10px #ffffffeb, 5px 5px 10px #00000042;
+}
+@mixin neo-shadow-inset {
+    box-shadow: inset -5px -5px 10px #ffffffee, inset 3px 3px 4px #00000040;
 }
 
 .wrapper {
@@ -64,16 +74,19 @@ ul {
 
 
 
-
 @media(min-width:768px) {
     .wrapper {
         padding-left: 3em;
         padding-right: 3em;
     }
-
+    
     h2.titulo-secao {
-        font-size: $x-grande;
         margin: 1em;
-        text-align: left;
+        font-size: $x-grande;
+        text-align: center;
+    }
+    .descricao-secao{
+        margin: 0em 4em;
+        color: $azul-escuro;
     }
 }

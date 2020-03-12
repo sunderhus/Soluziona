@@ -9,3 +9,20 @@
         transform: translateY(0px);
     }
 }
+@keyframes grow-from-left {
+    from{
+     transform: translateX(0);
+    }
+    to{
+      transform: translateX(50px);
+      display: hidden;
+    }
+  }
+  @keyframes fade-in-box-shadow{
+    from{
+      box-shadow: transparent transparent;
+    }
+    to{
+      @include neo-shadow-inset;
+    }
+  }
