@@ -1,5 +1,5 @@
 #depoimentos {
-
+    padding-top: 3em;
     .swiper-container {
         min-height: 150px;
         border-radius: 1em;
@@ -53,12 +53,12 @@
     }
 
     .swiper-button-next {
-        background-image: url(../../assets/svg/double-arrow-next.svg);
+        background-image: url(assets/svg/double-arrow-next.svg);
         right: 0.75em;
     }
 
     .swiper-button-prev {
-        background-image: url(../../assets/svg/double-arrow-prev.svg);
+        background-image: url(assets/svg/double-arrow-prev.svg);
         left: 0.75em;
 
     }

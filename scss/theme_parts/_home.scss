@@ -1,14 +1,69 @@
 
-section#ultimos-posts{
-    padding-top: 3em ;
-    padding-bottom:9em;   
-    .grid-posts{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(auto,500px));
-        justify-content: center;
-        grid-gap: 3em;
-    }
+section#servicos {
+  display: grid;
+  grid-gap: 2.8em;
 }
+
+.mini-card{
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+  border-radius: 1em;
+  position: relative;
+  @include neo-shadow;
+  a{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 272px;
+    .mini-card-icon{
+      margin-bottom: 1em;
+    }
+    .mini-card-texto{
+      text-align: center;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color: $azul-claro;
+      margin-left:auto;
+      margin-right: auto;
+      bottom: 22%;
+    }
+  }
+  &:hover{
+    animation: fade-in-box-shadow 0.30s linear forwards;
+    a:before{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color:  lighten($color: $verde, $amount: 10);
+     
+      margin-left:auto;
+      margin-right: auto;
+      bottom: 22%;
+    }
+    a:after{
+      background-color: $cinza-claro;
+      animation: grow-from-left 0.45s linear forwards;
+    }
+  }
+}
+
+
+section#ultimos-posts{
+  padding-top: 3em ;
+  padding-bottom:9em;   
+  .grid-posts{
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(auto,500px));
+      justify-content: center;
+      grid-gap: 3em;
+  }
   .swiper-container {
       width: 100%;
       height: 100%;
@@ -16,19 +71,9 @@ section#ultimos-posts{
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    background: $branco;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
   }
+}
