@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- CSS glightbox -->
     <link rel="stylesheet" href="./css/glightbox.min.css">
-   
+
 
 
 </head>
@@ -50,24 +50,68 @@
         </nav>
     </header>
     <main>
-        <section id="servicos" class="wrapper">
-            <div>
+        <section class=" home-slider wrapper">
+            <!-- Slider main container -->
+            <div class="swiper-container-top">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Soluções personalizadas</h2>
+                            <a href="#">saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/passaro.png" alt="Imagem com um passaro no centro">
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Soluções personalizadas</h2>
+                            <a href="#">saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/passaro.png" alt="Imagem com um passaro no centro">
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Soluções personalizadas</h2>
+                            <a href="#">saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/passaro.png" alt="Imagem com um passaro no centro">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+             <div class="swiper-pagination-top"></div>
+            </div>
+        </section>
+        <section class="wrapper fixed-shape">
+            <img src="assets/svg/fixed-wave.svg" alt="">
+        </section>
+        <section id="servicos" class="servicos-grid wrapper">
+            <div class="servicos-grid-item">
                 <h2 class="titulo-secao">Conheça as soluções</h2>
                 <p class="descricao-secao">
-                    Fornecemos soluções personalizadas em energia e meio ambiente com compromisso de responsabilidade social e desenvolvimento sustentável.
+                    Fornecemos soluções personalizadas em energia e meio ambiente com compromisso de responsabilidade
+                    social e desenvolvimento sustentável.
                 </p>
             </div>
-            <div class="mini-card">
+            <div class="servicos-grid-item mini-card">
                 <a href="#">
                     <div class="mini-card-icon">
-                        <img src="assets/svg/licenciamento_iconc.svg" alt="Ícone de licenciamento">
+                        <img src="assets/svg/licenciamento_icon.svg" alt="Ícone de licenciamento">
                     </div>
                     <div class="mini-card-texto">
                         <p>Licenciamento e Estudos Ambientais</p>
                     </div>
                 </a>
             </div>
-            <div class="mini-card">
+
+            <div class="servicos-grid-item mini-card">
                 <a href="#">
                     <div class="mini-card-icon">
                         <img src="assets/svg/ecoinovacao_icon.svg" alt="Ícone de Ecoinovação">
@@ -77,33 +121,36 @@
                     </div>
                 </a>
             </div>
-            <div class="mini-card">
+
+            <div class="servicos-grid-item mini-card">
                 <a href="#">
                     <div class="mini-card-icon">
-                        <img src="assets/svg/licenciamento_iconc.svg" alt="Ícone de licenciamento">
+                        <img src="assets/svg/geoprocessamento_icon.svg" alt="Ícone de Ecoinovação">
                     </div>
                     <div class="mini-card-texto">
-                        <p>Licenciamento e Estudos Ambientais</p>
+                        <p>Geoprocessamento</p>
                     </div>
                 </a>
             </div>
-            <div class="mini-card">
+
+            <div class="servicos-grid-item mini-card">
                 <a href="#">
                     <div class="mini-card-icon">
-                        <img src="assets/svg/ecoinovacao_icon.svg" alt="Ícone de Ecoinovação">
+                        <img src="assets/svg/engenharia_icon.svg" alt="Ícone de engenharia">
                     </div>
                     <div class="mini-card-texto">
-                        <p>Ecoinovação para a sustentabilidade</p>
+                        <p>Engenharia</p>
                     </div>
                 </a>
             </div>
-            <div class="mini-card">
+           
+            <div class="servicos-grid-item mini-card">
                 <a href="#">
                     <div class="mini-card-icon">
-                        <img src="assets/svg/licenciamento_iconc.svg" alt="Ícone de licenciamento">
+                        <img src="assets/svg/consultoria_icon.svg" alt="Ícone de Consultoria Jurídica Ambiental">
                     </div>
                     <div class="mini-card-texto">
-                        <p>Licenciamento e Estudos Ambientais</p>
+                        <p>Consultoria Jurídica Ambiental</p>
                     </div>
                 </a>
             </div>
@@ -124,7 +171,10 @@
                                 <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
                             </div>
                             <div class="depoimento-main">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam, sagittis dapibus viverra nec, vene natis at enim.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetura adipiscing elit. Sed eu aliquam sapien.
+                                    Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean
+                                    ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis
+                                    diam, sagittis dapibus viverra nec, vene natis at enim.</p>
                             </div>
                             <div class="depoimento-footer">
                                 <p>Porto Alegre/RS</p>
@@ -138,7 +188,10 @@
                                 <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
                             </div>
                             <div class="depoimento-main">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam, sagittis dapibus viverra nec, vene natis at enim.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
                             </div>
                             <div class="depoimento-footer">
                                 <p>Porto Alegre/RS</p>
@@ -152,7 +205,10 @@
                                 <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
                             </div>
                             <div class="depoimento-main">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam, sagittis dapibus viverra nec, vene natis at enim.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
                             </div>
                             <div class="depoimento-footer">
                                 <p>Porto Alegre/RS</p>
@@ -166,14 +222,17 @@
                                 <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
                             </div>
                             <div class="depoimento-main">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam, sagittis dapibus viverra nec, vene natis at enim.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
                             </div>
                             <div class="depoimento-footer">
                                 <p>Porto Alegre/RS</p>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
@@ -190,7 +249,7 @@
                         <div class="card-header">
                         </div>
                         <div class="card-main">
-                            <img src="./assets/img/Morrogrande.png" alt="Projeto Morro grande">
+                            <img src="./assets/img/madeira_cortada.png" alt="Projeto Morro grande">
                         </div>
                         <div class="card-footer">
                             <div class="card-footer-descricao">
@@ -199,7 +258,7 @@
                             <div class="card-footer-data">
                                 <p>00/00/2020</p>
                             </div>
-                            
+
                         </div>
                         <div class="card-gallery">
                         </div>
@@ -210,7 +269,7 @@
                         <div class="card-header">
                         </div>
                         <div class="card-main">
-                            <img src="./assets/img/Morrogrande.png" alt="Projeto Morro grande">
+                            <img src="./assets/img/caminhoes_trabalhando.png" alt="Projeto Morro grande">
                         </div>
                         <div class="card-footer">
                             <div class="card-footer-descricao">
@@ -219,7 +278,7 @@
                             <div class="card-footer-data">
                                 <p>00/00/2020</p>
                             </div>
-                            
+
                         </div>
                         <div class="card-gallery">
                         </div>
@@ -230,7 +289,7 @@
                         <div class="card-header">
                         </div>
                         <div class="card-main">
-                            <img src="./assets/img/Morrogrande.png" alt="Projeto Morro grande">
+                            <img src="./assets/img/pequeno_inseto.png" alt="Projeto Morro grande">
                         </div>
                         <div class="card-footer">
                             <div class="card-footer-descricao">
@@ -239,7 +298,7 @@
                             <div class="card-footer-data">
                                 <p>00/00/2020</p>
                             </div>
-                            
+
                         </div>
                         <div class="card-gallery">
                         </div>
@@ -280,8 +339,11 @@
                                 <p>Local: Muitos Capões - RS</p>
                             </div>
                             <div class="card-footer-icon">
-                               
-                                <a href="assets/img/Morrogrande.png" class="soluzionaBox" data-title="Ver mais fotos deste projeto" data-description="desciption here" data-descPosition="right" data-type="image" data-effect="fade" data-gallery="gallery-3">
+
+                                <a href="assets/img/Morrogrande.png" class="soluzionaBox"
+                                    data-title="Ver mais fotos deste projeto" data-description="desciption here"
+                                    data-descPosition="right" data-type="image" data-effect="fade"
+                                    data-gallery="gallery-3">
                                     <img src="./assets/svg/galeria-posts.svg" alt="Ver mais fotos deste projeto">
                                 </a>
                             </div>
@@ -310,8 +372,11 @@
                                 <p>Local: Muitos Capões - RS</p>
                             </div>
                             <div class="card-footer-icon">
-                               
-                                <a href="assets/img/Morrogrande.png" class="soluzionaBox" data-title="Ver mais fotos deste projeto" data-description="desciption here" data-descPosition="right" data-type="image" data-effect="fade" data-gallery="gallery-3">
+
+                                <a href="assets/img/Morrogrande.png" class="soluzionaBox"
+                                    data-title="Ver mais fotos deste projeto" data-description="desciption here"
+                                    data-descPosition="right" data-type="image" data-effect="fade"
+                                    data-gallery="gallery-3">
                                     <img src="./assets/svg/galeria-posts.svg" alt="Ver mais fotos deste projeto">
                                 </a>
                             </div>
@@ -390,9 +455,25 @@
 
     <!-- Initialize Swiper -->
     <script>
+
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 15222222222222222222000,
+            },
+            loop:true,
+            dynamicBullets:true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+        
+
         let numeroDeItensSlide = window.innerWidth <= 768 ? 1 : 2;
         var swiper = new Swiper('.swiper-container', {
-            spaceBetween:30,
+            spaceBetween: 30,
             slidesPerGroup: numeroDeItensSlide,
             slidesPerView: numeroDeItensSlide,
             navigation: {
@@ -414,6 +495,7 @@
             touchNavigation: true
         });
     </script>
+
 </body>
 
 </html>

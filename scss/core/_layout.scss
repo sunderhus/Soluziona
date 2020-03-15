@@ -81,12 +81,15 @@ ul {
     }
     
     h2.titulo-secao {
-        margin: 1em;
         font-size: $x-grande;
-        text-align: center;
+        text-align: left;
     }
     .descricao-secao{
-        margin: 0em 4em;
         color: $azul-escuro;
+    }
+}
+@media(min-width:1200px){
+    h2.titulo-secao {
+        margin-left: 1em;
     }
 }
