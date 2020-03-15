@@ -1,0 +1,19 @@
+.fixed-shape{
+    position: relative;
+    max-width: 1600px;
+    top: -10em;
+    left: -13em;
+    img{
+        display: none;
+    }
+}
+@media(min-width:1500px){
+    .fixed-shape
+    {
+        img{
+            display: block;
+            width: auto;
+        }
+    }
+        
+}
