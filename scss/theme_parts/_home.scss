@@ -160,12 +160,18 @@ section#ultimos-posts {
   }
 
   .home-slider{
-    &-text{
-      margin-bottom: 0px;
+    &-item{
+      justify-content: center;
     }
     &-text{
+      margin-bottom: 1em;
+    }
+    &-text{
+      h2{
+        margin-left: 0em;
+      }
        a{
-         margin-left: 3em;
+         margin-left: 0em;
        }
      }
   }
@@ -206,5 +212,24 @@ section#ultimos-posts {
       display: flex;
       align-items: center;
     }
+  }
+}
+@media(min-width:1500px){
+ 
+  .home-slider{
+    &-item{
+      justify-content: space-between;
+    }
+    &-text{
+      margin-bottom: 0px;
+    }
+    &-text{
+      h2{
+        margin-left: 1em;
+      }
+       a{
+         margin-left: 3em;
+       }
+     }
   }
 }
