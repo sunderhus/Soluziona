@@ -1,14 +1,16 @@
 /* Set the width of the side navigation to 250px */
-function openNav() {
-    let menuSize = window.innerWidth > 768 ? "559px" : "100%";
+const openNav = () => {
+    document.getElementById("overlayMenu").classList.add("active");
+    const menuSize = window.innerWidth > 768 ? "559px" : "100%";
     document.getElementById("menuMobile").style.width = menuSize;
 }
 
 /* Set the width of the side navigation to 0 */
-function closeNav() {
+const closeNav = () => {
     document.getElementById("menuMobile").style.width = "0";
+    document.getElementById("overlayMenu").classList.remove("active");
 }
 
-function toggleIdiomas() {
+const toggleIdiomas = () => {
     document.querySelector('.seletor-idiomas').classList.toggle('active');
 }
