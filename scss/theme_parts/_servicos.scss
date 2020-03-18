@@ -1,0 +1,100 @@
+%max-width-servico{
+    max-width: 1400px;
+}
+
+.servico{
+    &-topo{
+        @extend %max-width-servico;
+    }
+    &-descricao{
+        @extend %max-width-servico;
+    }
+    &-informacoes{
+        @extend %max-width-servico;
+    }
+}
+.informacoes-accordion{
+    display: grid;
+    grid-gap: 0.8em;    
+    .accordion-titulo{
+        cursor: pointer;
+        outline: none;
+        border: none;
+        padding: 1em 1em;
+        color: $azul-escuro;
+        font-size: 1.2em;
+        font-weight: bold;
+        @include neo-shadow;
+        border-radius: 1em;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        background-color: $cinza-claro;
+        &.active{
+            animation: fade-in-box-shadow 0.50s linear forwards;
+            img{
+                transform: rotateZ(-180deg);
+                transition: transform 0.3s linear ;
+            }
+        }
+        img{
+            position: absolute;
+            right: 1em;
+            top: 37%;
+            width: $regular;
+        }
+        span{
+            display: flex;
+            max-width: 90%;
+        }
+
+    }
+    div.accordion-descricao{
+        display: block;
+        text-align: left;
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+        font-size: $x-pequena;
+        color: $azul-escuro;
+        transition: padding-top 0.5s linear;
+        &.active{
+            padding: 1em;
+            animation: show-info-drescription 0.5s linear 0s 1 forwards;
+        }
+    }
+}
+
+
+@keyframes show-info-drescription{
+    from{
+        height: 0px;
+        opacity: 0;
+
+    }
+    45%{
+        height: 100%;
+        opacity: 0;
+    }
+    to{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+
+@media(min-width:768px){
+    .informacoes-accordion{
+        .accordion-titulo{
+            padding: 1em 2em;
+            font-size: 1.5em;
+            
+        }
+        div.accordion-descricao{
+            &.active{
+                padding: 1em 3em;
+                animation: show-info-drescription 0.5s linear 0s 1 forwards;
+            }
+        }
+    }
+}
