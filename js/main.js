@@ -14,3 +14,11 @@ const closeNav = () => {
 const toggleIdiomas = () => {
     document.querySelector('.seletor-idiomas').classList.toggle('active');
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/sw.js').then(
+        function () {
+            console.log('register sw')
+        }
+    );
+}
