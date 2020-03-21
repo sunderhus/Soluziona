@@ -4,18 +4,77 @@
 
 .servico{
     &-topo{
+
+        position: relative;
         @extend %max-width-servico;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 6em;
+        &-texto{
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: column;
+            align-items: flex-start;
+            height: 100%;
+            margin-right: 3em;
+            margin-bottom: 4em;
+            h2{
+                margin-left: 0px;
+                max-width: 550px;
+            }
+            a{
+                color: $laranja;
+                font-weight: bold;
+                font-size: $grande;
+            }
+        }
+        &-imagem{
+            img{
+                border-radius: 1.5em;
+                width: 100%;
+                max-width: 550px;
+                position: relative;
+            }
+        }
     }
     &-descricao{
         @extend %max-width-servico;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3em 0em;
+        &-icon{
+            img{
+                height:  3.5em;
+            }
+        }
+        &-texto{
+            color: $azul-escuro;
+            font-size: $pequena;
+            line-height: 1.5em;
+        }
+        .detalhe-descricao{
+            max-width: 250px;
+            border: 2px solid $azul-claro;
+            border-radius: 4px;
+            margin-bottom: 6em;
+            margin-top: -0.5em;
+          
+        }
     }
     &-informacoes{
         @extend %max-width-servico;
+        h4{
+            color:$verde-claro;
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
     }
 }
 .informacoes-accordion{
     display: grid;
-    grid-gap: 0.8em;    
+    gap: 0.8em;    
     .accordion-titulo{
         cursor: pointer;
         outline: none;
@@ -94,6 +153,19 @@
             &.active{
                 padding: 1em 3em;
                 animation: show-info-drescription 0.5s linear 0s 1 forwards;
+            }
+        }
+    }
+    .servico{
+        &-descricao{
+            &-icon{
+                img{
+                    height:  auto;
+                }
+            }
+            &-texto{
+                color: $azul-escuro;
+                font-size: $regular;
             }
         }
     }
