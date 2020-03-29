@@ -6,7 +6,6 @@
     margin-bottom: 2em;
     h2{
         margin-left: 0;
-        font-size: $x-grande;
     }
     .portifolio-descricao{
         max-width:34em;
@@ -26,10 +25,6 @@
 @media(min-width:1200px){
     .topo-portifolio{
         margin-bottom: 7em;
-        h2{
-           
-            font-size: $xx-grande;
-        }
     }
     .portifolio-descricao{
         text-align: center;
