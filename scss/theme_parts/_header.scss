@@ -38,17 +38,20 @@ header {
         position: relative;
         cursor: pointer;
         display: none;
-        &.active{
-            img{
+
+        &.active {
+            img {
                 transform: rotate(180deg) translateX(0.8em);
                 transform-origin: center center;
                 transition: transform 0.3s linear;
-                
+
             }
+
             ul {
                 display: block;
             }
         }
+
         img {
             transition: transform 0.3s linear;
             position: absolute;
@@ -77,8 +80,9 @@ header {
         display: inline;
     }
 }
-@media(min-width:900px){
-    
+
+@media(min-width:900px) {
+
     header nav.seletor-idiomas {
         display: block;
     }
