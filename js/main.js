@@ -45,3 +45,14 @@ window.addEventListener("deviceorientation", event => {
       -2.5}px)`;
   }
 });
+
+/* animate call to action - envio de currículo - colaboradores */
+const conviteCard = document.querySelector('.convite');
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].intersectionRatio > 0) {
+    entries[0].target.classList.add('pulse');
+  } else {
+    entries[0].target.classList.remove('pulse');
+  }
+});
+observer.observe(conviteCard);

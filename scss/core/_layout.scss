@@ -13,7 +13,8 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
@@ -30,26 +31,28 @@ h2.titulo-secao {
     text-align: left;
     color: $azul-escuro;
 }
-h3.titulo-secao{
+
+h3.titulo-secao {
     font-size: 2.25em;
     text-align: center;
     color: $azul-escuro;
     margin-bottom: 1.5em;
 }
 
-h5{
+h5 {
     color: $azul-escuro;
     font-weight: bold;
     font-size: $grande;
     margin: 0;
 }
 
-.titulo-pagina{
+.titulo-pagina {
     text-align: left;
     font-size: 55px;
     color: $azul-escuro;
 }
-.descricao-secao{
+
+.descricao-secao {
     color: $azul-escuro;
     font-size: $x-regular;
 }
@@ -63,13 +66,15 @@ footer {
 
     flex-shrink: 0;
 }
-p{
+
+p {
     line-height: 1.5em;
 }
 
 @mixin neo-shadow {
     box-shadow: -5px -5px 10px #ffffffeb, 5px 5px 10px #00000042;
 }
+
 @mixin neo-shadow-inset {
     box-shadow: inset -5px -5px 10px #ffffffee, inset 3px 3px 4px #00000040;
 }
@@ -102,23 +107,26 @@ ul {
         padding-left: 3em;
         padding-right: 3em;
     }
-    
+
     h2.titulo-secao {
         font-size: $x-grande;
         text-align: left;
     }
-    .descricao-secao{
+
+    .descricao-secao {
         color: $azul-escuro;
     }
-    .titulo-pagina{
+
+    .titulo-pagina {
         font-size: $xx-grande;
         color: $azul-escuro;
     }
-  
+
 }
-@media(min-width:1200px){
+
+@media(min-width:1200px) {
     h2.titulo-secao {
         margin-left: 1em;
     }
-   
+
 }
