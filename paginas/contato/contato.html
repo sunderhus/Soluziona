@@ -121,6 +121,44 @@
                 Contato
             </h2>
         </section>
+        <section class="wrapper grid-contato">
+            <div class="contato-infos">
+                <div class="contato-infos-descricao">
+                    Para entrar em contato conosco, preencha o formulário ou utilize as informações de contato abaixo.
+                    Ficaremos felizes em atender você.
+                </div>
+                <div class="filial">
+                    <h5 class="filial-nome">
+                        Marau
+                    </h5>
+                    <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
+                    <a href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS" class="endereço"> Rua Darvin Marosin, 210 - Marau/RS </a>
+                    <p class="cep">CEP 99150-000</a>
+                </div>
+
+                <div class="filial">
+                    <h5 class="filial-nome">
+                        Porto Alegre
+                    </h5>
+                    <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
+                    <a href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS" class="endereço">Rua Coronel Corte Real, 928 - Porto Alegre/RS </a>
+                    <p class="cep">CEP 90630-080</a>
+                </div>
+
+                <div class="filial">
+                    <h5 class="filial-nome">
+                        Florianópolis
+                    </h5>
+                    <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
+                    <a href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS" class="endereço">Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS</a>
+                    <p class="cep">CEP 88034-102</a>
+                </div>
+
+            </div>
+            <div class="contato-formularios">
+
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -181,23 +219,22 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-     <!-- Initialize Swiper -->
-     <script>
-
+    <!-- Initialize Swiper -->
+    <script>
         var topSlider = new Swiper('.swiper-container-top', {
             spaceBetween: 320,
             autoplay: {
                 slidesPerView: 1,
                 delay: 10000,
             },
-            loop:true,
-            dynamicBullets:true,
+            loop: true,
+            dynamicBullets: true,
             pagination: {
                 el: '.swiper-pagination-top',
                 dynamicBullets: true,
             },
         });
-        
+
 
         let numeroDeItensSlide = window.innerWidth <= 768 ? 1 : 2;
         var swiper = new Swiper('.swiper-container', {
