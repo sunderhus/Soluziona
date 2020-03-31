@@ -1,0 +1,152 @@
+.grid-contato {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 700px));
+    gap: 3em;
+    justify-content: space-between;
+    margin-bottom: 7em;
+
+    .contato-infos {
+        max-width: 480px;
+
+        &-descricao {
+            margin-bottom: 3em;
+
+            p {
+                margin: 0px;
+                font-size: $regular;
+                color: $azul-escuro;
+            }
+        }
+
+        .filial {
+            h5 {
+                margin-bottom: 0.5em;
+            }
+
+            display: grid;
+            gap: 0.5em;
+            margin-bottom: 2em;
+
+            a,
+            p {
+                margin: 0px;
+                font-weight: normal;
+                color: $azul-escuro;
+                font-size: $x-pequena;
+            }
+        }
+    }
+
+    .contato-formularios {
+        &-opcoes {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-opcao {
+            border: none;
+            outline: none;
+            padding: 1.8em;
+            display: flex;
+            font-size: 18px;
+            max-width: 340px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.5em;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: $cinza;
+            margin-bottom: 1em;
+
+            span {
+                font-size: $pequena;
+            }
+
+            &.active {
+                background-color: $azul-transparente;
+            }
+
+            &:first-child {
+                margin-right: 1em;
+
+            }
+        }
+
+        .formularios {
+            width: 100%;
+            height: fit-content;
+
+            .formulario-contato {
+                visibility: hidden;
+                height: 0;
+                opacity: 0;
+                transition: opacity 0.45s;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                    display: flex;
+                    flex-flow: column;
+                    width: 100%;
+                    height: fit-content;
+                }
+
+                input:not([type=submit]),
+                textarea {
+                    padding: 1.5em;
+                    @include neo-shadow-inset;
+                    margin-bottom: 1em;
+                    border-radius: 1em;
+                    color: $azul-escuro;
+                    font-size: $pequena;
+                    background: transparent;
+                    line-height: 1.5em;
+                   
+                    &::placeholder{
+                        color: $azul-escuro;
+                        font-size: $pequena;
+                    }
+                }
+                textarea{
+                    max-width: 100%;
+                    resize: vertical;
+                    max-height: 15em;
+                    height: 15em;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+
+                input[type=submit] {
+                    padding: 1.5em;
+                    margin-bottom: 1em;
+                    border-radius: 1em;
+                    color: $laranja;
+                    font-size: $regular;
+                    font-weight: bold;
+                    text-align: left;
+                    background: transparent;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .grid-contato {
+        .contato-formularios{
+            &-opcao {
+                max-width: 100%;
+                &:first-child {
+                    margin-right: 0em;
+    
+                }
+            }
+            .formularios .formulario-contato input[type=submit]{
+                text-align: center ;
+            }
+        }
+    }
+}
