@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluziona - Energia e Meio Ambiente - Engenharia</title>
-     <!-- Manifest configuration -->
-     <link rel="manifest" href="../../site.webmanifest">
+    <title>Soluziona - Energia e Meio Ambiente - Blog</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="../../site.webmanifest">
     <!-- fivicons Soluziona -->
     <link rel="apple-touch-icon" sizes="76x76" href="../../assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
@@ -42,7 +42,7 @@
                     <a href="#servicos" title="navegar para Home">Serviços</a>
                 </li>
                 <li>
-                    <a href="/Portifolio" title="navegar para Home">Portifólio</a>
+                    <a href="./portifolio.html" title="navegar para Home">Portifólio</a>
                 </li>
                 <li>
                     <a href="paginas/contato/contato.html" title="navegar para Home">Contato</a>
@@ -57,11 +57,12 @@
                 <li><a href="#">Germany</a></li>
             </ul>
         </nav>
-        <span class="mobile-menu-icon"onclick="openNav()"><img src="../../assets/svg/menu-icon.svg" alt="Abrir menu"></span>
+        <span class="mobile-menu-icon" onclick="openNav()"><img src="../../assets/svg/menu-icon.svg"
+                alt="Abrir menu"></span>
         <div id="menuMobile" class="sidenav">
             <div class="menu-mobile-head">
                 <h3>Menu</h3>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
             <ul class="menu-mobile-body">
                 <li class="menu-mobile-item">
@@ -81,7 +82,7 @@
                     </ul>
                 </li>
                 <li class="menu-mobile-item">
-                    <a href="/Portifolio" title="navegar para Home">Portifólio</a>
+                    <a href="./portifolio.html" title="navegar para Portifólio">Portifólio</a>
                 </li>
                 <li class="menu-mobile-item">
                     <a href="paginas/blog/blog.html" title="navegar para Home">Blog</a>
@@ -94,16 +95,16 @@
                 <div class="menu-mobile-redes-sociais">
                     <a href="" class="">
                         <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="" class="">
                         <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="" class="">
                         <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
                         <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                 </div>
                 <div class="menu-mobile-idiomas">
                     <a href="#">Português</a>
@@ -113,122 +114,44 @@
             </div>
         </div>
     </header>
-    
+
     <main>
-        <section class="servico-topo wrapper">
-            <div class="servico-topo-texto">
-                <h2 class="titulo-secao">
-                    Ecoinovação para a Sustentabilidade
-                </h2>
-                <a href="#">
-                    Entrar em contato
-                </a>
-            </div>
-            <div class="servico-topo-imagem">
-                <img src="../../assets/img/parque_eolico.png" alt="tartaruga nadando">
-                <section class="wrapper fixed-shape-right fixed-circle">
-                    <img src="../../assets/svg/circulo.svg" alt="figura de uma circunferencia">
-                </section>
-            </div>
-        </section>
-        <section class="servico-descricao wrapper">
-            <div class="servico-descricao-icon">
-                <img src="../../assets/svg/ecoinovacao_icon.svg" alt="ícone de capacete">
-            </div>
-            <div class="servico-descricao-texto">
-                A Soluziona é uma empresa que possui um compromisso com o meio ambiente e aliado à nossa experiência na gestão ambiental estamos sempre em busca de inovação para a sustentabilidade. <br>
-                <br>
-                Prestamos assessoria para pessoas físicas e jurídicas que possuem interesse em adotar práticas sustentáveis que possam gerar maior rentabilidade, reduzir riscos e custos, além de agregar valor à marca e aos negócios.<br>
-                <br>
-                Nossas ações incluem a utilização de fontes de energia limpa, racionalização e reaproveitamento do uso da água, minimização e aproveitamento dos resíduos e a preservação de áreas verdes.
-            </div>
-
-            <div class="detalhe-descricao">
-
+        <section class="topo-blog wrapper">
+            <h2 class="titulo-pagina">
+                Blog
+            </h2>
+            <div class="blog-filtro-wrapper">
+                <form name="form-blog" action="/blog.html" class="blog-filtro-formulario">
+                    <div class="input-wrapper">
+                        <input id="assunto" class="blog-filtro-formulario-input" type="text"
+                            placeholder="Pesquise um assunto" name="assunto">
+                        <label class="blog-filtro-formulario-label" for="enviar">
+                            <img src="../../assets/svg/lupa.svg" alt="Buscar"> Buscar</label>
+                        </input>
+                    </div>
+                    <input type="submit" id="enviar" class="dont-show" value="Buscar">
+                </form>
             </div>
         </section>
-        <!-- accordion com infomações do serviço -->
-        <section class="servico-informacoes wrapper">
-            <h4>Mais informações</h4>
-            <div class="informacoes-accordion">
-                <button class="accordion-titulo">
-                    <span>Eficiência Energética</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                
-                <div class="accordion-descricao">
-                    <p>
-                        Criamos projetos de eficiência energética, para reduzir o consumo e evitar o desperdício de energia.<br>
-                    </p>
-                </div>
-                <button class="accordion-titulo">
-                    <span>Projeto de Drenagem</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                <div class="accordion-descricao">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae nisi ratione enim eveniet at voluptates delectus officia impedit aspernatur, ullam maiores aliquam iusto aliquid esse praesentium officiis! Rem, accusamus! Commodi magni aspernatur repudiandae sit minima. Nobis eius delectus laborum, doloribus, id vitae dolores adipisci officiis veritatis saepe placeat quia?
-                    </p>
-                </div>
-                <button class="accordion-titulo">
-                    <span>Energia Fotovoltaica</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                <div class="accordion-descricao">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur suscipit quaerat vero repellendus exercitationem incidunt veniam saepe assumenda quam culpa reiciendis, nisi possimus a labore quas blanditiis minima beatae?
-                    </p>
-                </div>
-                <button class="accordion-titulo">
-                    <span>IPTU Verde</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                <div class="accordion-descricao">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis ab ea delectus dolore! Architecto aut vero nostrum corporis quis, dolore, incidunt facilis quae, itaque aliquid labore! Officia vel architecto nobis dolor culpa nemo facere explicabo molestiae quod laborum repudiandae esse quam minus cupiditate, quo quidem, voluptas dolores quis? Rem voluptatibus, eum asperiores iste commodi sequi ex ipsa sit temporibus repellendus eius? Sequi, similique? Dignissimos, vero consequatur suscipit non, consectetur ea, in alias asperiores aliquam minus error vel! Esse unde saepe quam alias porro ipsam, ducimus doloremque vero! A odit doloribus labore pariatur modi cum, minima quos aliquam in impedit quisquam, illo ipsa nisi unde nostrum! Voluptates quidem commodi rem corporis! Quos debitis ut voluptatem ad culpa optio, soluta quam similique quisquam a iusto eaque fugiat quia voluptatum necessitatibus et nemo, aliquid suscipit itaque reprehenderit at? Perspiciatis beatae vel nostrum?
-                    </p>
-                </div>
-                <button class="accordion-titulo">
-                    <span>Auditorias de Oportunidades</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                <div class="accordion-descricao">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis ab ea delectus dolore! Architecto aut vero nostrum corporis quis, dolore, incidunt facilis quae, itaque aliquid labore! Officia vel architecto nobis dolor culpa nemo facere explicabo molestiae quod laborum repudiandae esse quam minus cupiditate, quo quidem, voluptas dolores quis? Rem voluptatibus, eum asperiores iste commodi sequi ex ipsa sit temporibus repellendus eius? Sequi, similique? Dignissimos, vero consequatur suscipit non, consectetur ea, in alias asperiores aliquam minus error vel! Esse unde saepe quam alias porro ipsam, ducimus doloremque vero! A odit doloribus labore pariatur modi cum, minima quos aliquam in impedit quisquam, illo ipsa nisi unde nostrum! Voluptates quidem commodi rem corporis! Quos debitis ut voluptatem ad culpa optio, soluta quam similique quisquam a iusto eaque fugiat quia voluptatum necessitatibus et nemo, aliquid suscipit itaque reprehenderit at? Perspiciatis beatae vel nostrum?
-                    </p>
-                </div>
-                <button class="accordion-titulo">
-                    <span>Capacitação de Gestores</span>
-                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
-                </button>
-                <div class="accordion-descricao">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis ab ea delectus dolore! Architecto aut vero nostrum corporis quis, dolore, incidunt facilis quae, itaque aliquid labore! Officia vel architecto nobis dolor culpa nemo facere explicabo molestiae quod laborum repudiandae esse quam minus cupiditate, quo quidem, voluptas dolores quis? Rem voluptatibus, eum asperiores iste commodi sequi ex ipsa sit temporibus repellendus eius? Sequi, similique? Dignissimos, vero consequatur suscipit non, consectetur ea, in alias asperiores aliquam minus error vel! Esse unde saepe quam alias porro ipsam, ducimus doloremque vero! A odit doloribus labore pariatur modi cum, minima quos aliquam in impedit quisquam, illo ipsa nisi unde nostrum! Voluptates quidem commodi rem corporis! Quos debitis ut voluptatem ad culpa optio, soluta quam similique quisquam a iusto eaque fugiat quia voluptatum necessitatibus et nemo, aliquid suscipit itaque reprehenderit at? Perspiciatis beatae vel nostrum?
-                    </p>
-                </div>
-            </div>
-        
+        <section class="wrapper filtro-categorias">
+            <a href="#" class="active">Todos</a>
+            <a href="#">Tecnologias</a>
+            <a href="#">Meio Ambiente</a>
+            <a href="#">Resíduos Sólidos</a>
+            <a href="#">Recursos Hídricos</a>
+            <a href="#">Legislação</a>
+            <a href="#">Artigos</a>
         </section>
-        <!-- banner azul de call to action -->
-        <section class="call-to-action wrapper">
-            <a href="#"> 
-                 <span>
-                    Ficou interessado em neste serviço?<br>
-                    Entre em contato com nossa equipe para mais informações.
-                 </span>
-            </a>
-        </section>
-        <!-- Posts relacionados  -->
         <section id="ultimos-posts" class="wrapper">
-            <h3 class="titulo-secao">Posts relacionados com este serviço</h3>
             <div class="grid-posts">
+
                 <!-- cards para home , servicos e blog -->
                 <div class="card-post">
-                    <a href="#">
+                    <a href="./single.html">
                         <div class="card-header">
                         </div>
                         <div class="card-main">
-                            <img src="../../assets/img/Engenheiro_eolico.png" alt="Projeto Morro grande">
+                            <img src="../../assets/img/madeira_cortada.png" alt="Projeto Morro grande">
                         </div>
                         <div class="card-footer">
                             <div class="card-footer-descricao">
@@ -244,7 +167,130 @@
                     </a>
                 </div>
                 <div class="card-post">
-                    <a href="#">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/caminhoes_trabalhando.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/pequeno_inseto.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-post">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/macaco_na_arvore.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-post">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/riacho.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-post">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/por_do_sol.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="./single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/abelha.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="./single.html">
                         <div class="card-header">
                         </div>
                         <div class="card-main">
@@ -264,11 +310,11 @@
                     </a>
                 </div>
                 <div class="card-post">
-                    <a href="#">
+                    <a href="./single.html">
                         <div class="card-header">
                         </div>
                         <div class="card-main">
-                            <img src="../../assets/img/por_do_sol.png" alt="Projeto Morro grande">
+                            <img src="../../assets/img/tartaruga.png" alt="Projeto Morro grande">
                         </div>
                         <div class="card-footer">
                             <div class="card-footer-descricao">
@@ -283,6 +329,30 @@
                         </div>
                     </a>
                 </div>
+            </div>
+            
+            <div class="paginacao">
+                <ul>
+                    <li><a href="1">Primeira</a></li>
+                    <li><a href="1">1</a></li>
+                    <li><a href="2">2</a></li>
+                    <li><a href="3">3</a></li>
+                    <li><a href="4">4</a></li>
+                    <li><a href="99">Última</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="call-to-newsletter">
+            <div class="wrapper call-to-newsletter-wrapper">
+                <div class="descricao">
+                    <p> Receba nossas notícias em seu e-mail. Preencha:</p>
+                </div>
+                <form action="index.html" name="newsletter" class="form-newsletter">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <input type="submit" value="Assinar">
+                </form>
             </div>
         </section>
     </main>
@@ -353,14 +423,38 @@
                 slidesPerView: 1,
                 delay: 10000,
             },
-            loop:true,
-            dynamicBullets:true,
+            loop: true,
+            dynamicBullets: true,
             pagination: {
                 el: '.swiper-pagination-top',
                 dynamicBullets: true,
             },
         });
-    </script>
 
+
+        let numeroDeItensSlide = window.innerWidth <= 768 ? 1 : 2;
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            slidesPerGroup: numeroDeItensSlide,
+            slidesPerView: numeroDeItensSlide,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 15000,
+            },
+        });
+    </script>
+    <!-- Initialize GlightBox -->
+    <script src="../../js/glightbox.min.js"></script>
+    <script>
+        var lightbox = GLightbox({
+            loop: true,
+            selector: 'soluzionaBox',
+            touchNavigation: true
+        });
+    </script>
 </body>
+
 </html>
