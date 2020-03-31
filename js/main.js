@@ -55,4 +55,18 @@ const observer = new IntersectionObserver((entries) => {
     entries[0].target.classList.remove('pulse');
   }
 });
-observer.observe(conviteCard);
+if (conviteCard) {
+  observer.observe(conviteCard);
+}
+/* Trocar formulário - Pagina de contato */
+
+
+const trocarFormulario = (opcao) => {
+  const ativos = document.querySelectorAll(`.${opcao}`);
+  const formularios = document.querySelectorAll('.formulario-contato');
+  const opcoes = document.querySelectorAll('.contato-formularios-opcao');
+
+  formularios.forEach(formulario => formulario.classList.remove('active'));
+  opcoes.forEach(opcao => opcao.classList.remove('active'));
+  ativos.forEach(itemAtivado => itemAtivado.classList.add('active'));
+}

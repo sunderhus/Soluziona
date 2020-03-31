@@ -124,15 +124,18 @@
         <section class="wrapper grid-contato">
             <div class="contato-infos">
                 <div class="contato-infos-descricao">
-                    Para entrar em contato conosco, preencha o formulário ou utilize as informações de contato abaixo.
-                    Ficaremos felizes em atender você.
+                    <p> Para entrar em contato conosco, preencha o formulário ou utilize as informações de contato
+                        abaixo.
+                        Ficaremos felizes em atender você.
+                    </p>
                 </div>
                 <div class="filial">
                     <h5 class="filial-nome">
                         Marau
                     </h5>
                     <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
-                    <a href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS" class="endereço"> Rua Darvin Marosin, 210 - Marau/RS </a>
+                    <a href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS" class="endereço"> Rua Darvin
+                        Marosin, 210 - Marau/RS </a>
                     <p class="cep">CEP 99150-000</a>
                 </div>
 
@@ -141,7 +144,8 @@
                         Porto Alegre
                     </h5>
                     <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
-                    <a href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS" class="endereço">Rua Coronel Corte Real, 928 - Porto Alegre/RS </a>
+                    <a href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS"
+                        class="endereço">Rua Coronel Corte Real, 928 - Porto Alegre/RS </a>
                     <p class="cep">CEP 90630-080</a>
                 </div>
 
@@ -150,13 +154,39 @@
                         Florianópolis
                     </h5>
                     <a href="tel:(51)3333-3333" class="telefone">(51) 3333-3333</a>
-                    <a href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS" class="endereço">Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS</a>
+                    <a href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS"
+                        class="endereço">Rod. Amaro Antônio Vieira, 1866 - Florianópolis/RS</a>
                     <p class="cep">CEP 88034-102</a>
                 </div>
 
             </div>
             <div class="contato-formularios">
-
+                <div class="contato-formularios-opcoes">
+                    <button onclick="trocarFormulario('opcao1')" class="contato-formularios-opcao opcao1 active">
+                        <span>Contato Comercial</span>
+                    </button>
+                    <button onclick="trocarFormulario('opcao2')"class="contato-formularios-opcao opcao2">
+                        <span>Envio de Currículo</span>
+                    </button>
+                </div>
+                <div class="formularios">
+                    <form action="#" method="POST" name="comercial" class="formulario-contato opcao1 active">
+                        <input required type="text" name="nome" placeholder="Nome">
+                        <input required type="email" name="email" placeholder="E-mail">
+                        <input required type="tel" name="telefone" placeholder="Telefone">
+                        <input required type="text" name="empresa" placeholder="Empresa">
+                        <textarea required type="" name="mensagem" placeholder="Mensagem"></textarea>
+                        <input type="submit" value="Enviar mensagem">
+                    </form>
+                    <form action="#" method="POST" name="curriculo" class="formulario-contato opcao2">
+                        <input required type="text" name="nome"   placeholder="Nome">
+                        <input required type="email" name="email" placeholder="E-mail">
+                        <input required type="tel" name="telefone" placeholder="Telefone">
+                        <input required type="file" accept="image/png, image/jpeg" name="anexo"   placeholder="Anexo">
+                        <input type="submit" value="Enviar Currículo">
+                    </form>
+                </div>
+                   
             </div>
         </section>
     </main>
