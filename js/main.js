@@ -14,12 +14,12 @@ const closeNav = () => {
 const toggleIdiomas = () => {
   document.querySelector(".seletor-idiomas").classList.toggle("active");
 };
-
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("js/sw.js").then(function () {
-    console.log("%c register sw", "color:yellow; background-color:black;");
-  });
-}
+/* register SW */
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("js/sw.js").then(function () {
+//     console.log("%c register sw", "color:yellow; background-color:black;");
+//   });
+// }
 /* Toggle  accordion */
 const toggleAccordion = item => {
   item.classList.toggle("active");
