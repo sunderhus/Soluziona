@@ -45,3 +45,13 @@
     transform: scale(1);
   }
 }
+
+@keyframes link-menu-desktop {
+  from {
+    width:0 ;
+  }
+ 
+  to {
+    transform: 110%;
+  }
+}
