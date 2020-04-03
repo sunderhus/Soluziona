@@ -10,6 +10,7 @@ const closeNav = () => {
   document.getElementById("menuMobile").style.width = "0";
   document.getElementById("overlayMenu").classList.remove("active");
 };
+/* Fechamento do menu a partir do overlay */
 const overlayMenuMobile = document.querySelector('#overlayMenu').addEventListener('click', () => {
   closeNav();
 })
