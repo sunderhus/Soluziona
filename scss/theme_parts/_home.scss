@@ -143,6 +143,15 @@ section#ultimos-posts {
   }
 }
 @media(min-width:768px){
+
+  .home-slider{
+    &-img{
+      img{
+        max-width: 700px;
+        border-radius: 1em;
+      }
+    }
+  }
   .servicos-grid {
     grid-template-columns: repeat(2, 1fr);
     
