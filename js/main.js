@@ -10,6 +10,9 @@ const closeNav = () => {
   document.getElementById("menuMobile").style.width = "0";
   document.getElementById("overlayMenu").classList.remove("active");
 };
+const overlayMenuMobile = document.querySelector('#overlayMenu').addEventListener('click', () => {
+  closeNav();
+})
 
 const toggleIdiomas = () => {
   document.querySelector(".seletor-idiomas").classList.toggle("active");
