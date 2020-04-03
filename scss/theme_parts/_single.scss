@@ -1,0 +1,182 @@
+.post-grid {
+    display: grid;
+    grid-template-areas:
+        "img"
+        "text"
+        "related"
+        "tags"
+        "share"
+        "back";
+    gap: 2em;
+    margin-bottom: 3em;
+
+    &-imagem {
+        grid-area: img;
+        max-width: 38.75em;
+
+        img {
+            max-width: 100%;
+            border-radius: 1.3em;
+            width: 100%;
+        }
+    }
+
+    &-conteudo {
+        grid-area: text;
+
+        .conteudo-tempo span,
+        .conteudo-data span {
+            font-size: toEm(18);
+            color: $azul-escuro;
+            line-height: toEm(38);
+        }
+
+        .titulo-secao {
+            margin: toEm(0);
+            font-size: toEm(54);
+        }
+
+        .conteudo-texto {
+            p {
+                margin-top: toEm(52);
+                font-size: $regular;
+                color: $azul-escuro;
+            }
+        }
+    }
+
+    &-relacionados {
+        grid-area: related;
+        display: flex;
+        flex-flow: column;
+
+        h5 {
+            font-size: $x-regular;
+            line-height: toEm(34);
+        }
+
+        .post-relacionado {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: toEm(30);
+
+            .thumb {
+                max-width: toEm(150);
+                margin-right: 1em;
+
+                img {
+                    width: 100%;
+                    border-radius: toEm(15);
+                }
+            }
+
+            .link {
+                max-width: toEm(449);
+
+                a {
+                    font-size: $pequena;
+                }
+            }
+        }
+    }
+
+    &-tags {
+        display: flex;
+        flex-flow: column;
+        grid-area: tags;
+       
+        h5 {
+            font-size: $x-regular;
+            line-height: toEm(34);
+            margin-bottom: toEm(18);
+        }
+
+        .tags {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+           
+            .tag {
+                padding: toEm(20) toEm(27);
+                font-size: $xs-pequena;
+                font-weight: normal;
+                background-color: $cinza;
+                border-radius: toEm(15);
+                margin-right: toEm(20);
+                margin-bottom: toEm(20);
+                transition: background-color 0.25s linear;
+                &:hover{
+                    background-color: $azul-transparente;
+                }
+            }
+        }
+    }
+
+    &-share {
+        grid-area: share;
+
+        h5 {
+            font-size: $x-regular;
+            line-height: toEm(34);
+            margin-bottom: toEm(18);
+        }
+
+        .medias {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .media {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: toEm(52.17);
+                height: toEm(52.17);
+                font-size: $xs-pequena;
+                font-weight: normal;
+                background-color: $azul-transparente;
+                border-radius: 50%;
+                margin-right: toEm(20);
+                margin-bottom: toEm(20);
+                transition: background-color 0.25s linear;
+                &:hover{
+                    background-color: $cinza;
+                }
+            }
+        }
+    }
+
+    &-back {
+        grid-area: back;
+        font-size: $x-regular;
+        line-height: toEm(34);
+        margin-bottom: toEm(18);
+    }
+}
+
+@media(min-width:600px) {
+    .post-grid-relacionados .post-relacionado .link a {
+        font-size: $regular;
+    }
+}
+
+@media(min-width:1250px) {
+    .post-grid {
+        grid-template-areas: "img text"
+            "related text"
+            "tags text"
+            "share text"
+            "back text";
+        grid-template-columns: minmax(500px, 620px) minmax(650px, 950px);
+        -ms-grid-rows: 0fr 0fr 0fr 0fr 1fr;
+        grid-template-rows: auto auto auto auto 1fr;
+        column-gap: toEm(70);
+        row-gap: 2.3em;
+        &-relacionados{
+            margin-top: toEm(83.2);   
+        }
+    }   
+}

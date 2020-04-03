@@ -1,0 +1,4 @@
+@function toEm($pixels){
+    $defaultSize :16;
+    @return ($pixels / $defaultSize)* 1em;
+}
