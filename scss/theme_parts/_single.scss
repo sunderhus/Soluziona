@@ -32,8 +32,7 @@
         }
 
         .titulo-secao {
-            margin: toEm(0);
-            font-size: toEm(54);
+            margin-left: toEm(0);
         }
 
         .conteudo-texto {
@@ -85,7 +84,7 @@
         display: flex;
         flex-flow: column;
         grid-area: tags;
-       
+
         h5 {
             font-size: $x-regular;
             line-height: toEm(34);
@@ -97,7 +96,7 @@
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
-           
+
             .tag {
                 padding: toEm(20) toEm(27);
                 font-size: $xs-pequena;
@@ -107,7 +106,8 @@
                 margin-right: toEm(20);
                 margin-bottom: toEm(20);
                 transition: background-color 0.25s linear;
-                &:hover{
+
+                &:hover {
                     background-color: $azul-transparente;
                 }
             }
@@ -142,7 +142,8 @@
                 margin-right: toEm(20);
                 margin-bottom: toEm(20);
                 transition: background-color 0.25s linear;
-                &:hover{
+
+                &:hover {
                     background-color: $cinza;
                 }
             }
@@ -163,20 +164,31 @@
     }
 }
 
-@media(min-width:1250px) {
-    .post-grid {
-        grid-template-areas: "img text"
-            "related text"
-            "tags text"
-            "share text"
-            "back text";
-        grid-template-columns: minmax(500px, 620px) minmax(650px, 950px);
-        -ms-grid-rows: 0fr 0fr 0fr 0fr 1fr;
-        grid-template-rows: auto auto auto auto 1fr;
-        column-gap: toEm(70);
-        row-gap: 2.3em;
-        &-relacionados{
-            margin-top: toEm(83.2);   
+@media(min-width:768px) {
+    .post-grid-conteudo .titulo-secao {
+        font-size: toEm(54);
+    }
+
+    @media(min-width:1250px) {
+        .post-grid {
+            grid-template-areas: "img text"
+                "related text"
+                "tags text"
+                "share text"
+                "back text";
+            grid-template-columns: minmax(500px, 620px) minmax(650px, 950px);
+            -ms-grid-rows: 0fr 0fr 0fr 0fr 1fr;
+            grid-template-rows: auto auto auto auto 1fr;
+            column-gap: toEm(70);
+            row-gap: 2.3em;
+
+            &-relacionados {
+                margin-top: toEm(83.2);
+            }
         }
-    }   
+
+        .post-grid-conteudo .titulo-secao{
+            margin: toEm(0);
+        }
+    }
 }

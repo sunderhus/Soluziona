@@ -27,22 +27,13 @@ header {
 
             li {
                 margin-right: 2em;
+                margin-bottom: 0.5em;
                 position: relative;
                 line-height: toEm(22);
-
-                &:hover:before {
-                    content: '';
-                    position: absolute;
-                    width: 120%;
-                    bottom: toEm(12)*-1;
-                    left: -10%;
-                    height: toEm(3);
-                    background-color: $azul-transparente;
-                    animation: link-menu-desktop 0.25s linear 0s 1 forwards;
-                }
             }
         }
     }
+
 
     nav.seletor-idiomas {
         font-weight: bold;
@@ -92,11 +83,25 @@ header {
     nav.menu-desktop {
         display: inline;
     }
+   
 }
 
 @media(min-width:900px) {
 
     header nav.seletor-idiomas {
         display: block;
+    }
+    header .menu-desktop ul li{
+        margin-bottom: 0px;
+    }
+    header .menu-desktop ul li:hover:before{
+        content: '';
+        position: absolute;
+        width: 120%;
+        bottom: toEm(12)*-1;
+        left: -10%;
+        height: toEm(3);
+        background-color: $azul-transparente;
+        animation: link-menu-desktop 0.25s linear 0s 1 forwards;
     }
 }
