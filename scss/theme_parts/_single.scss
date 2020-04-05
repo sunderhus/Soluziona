@@ -17,7 +17,9 @@
         img {
             max-width: 100%;
             border-radius: 1.3em;
-            width: 100%;
+            width: toEm(620);
+            max-height: toEm(373);
+            image-rendering: optimizeSpeed;
         }
     }
 
@@ -40,6 +42,10 @@
                 margin-top: toEm(52);
                 font-size: $regular;
                 color: $azul-escuro;
+            }
+            img{
+                max-width:800px;
+                width: 100%;
             }
         }
     }
