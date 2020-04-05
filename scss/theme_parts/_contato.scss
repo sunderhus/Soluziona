@@ -82,7 +82,7 @@
                 height: 0;
                 opacity: 0;
                 transition: opacity 0.45s;
-
+                margin: 0;
                 &.active {
                     opacity: 1;
                     visibility: visible;
