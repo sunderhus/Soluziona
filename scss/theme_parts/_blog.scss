@@ -111,12 +111,19 @@
             max-width: 100%;
             margin: 0;
 
+            .input-shadow{
+                @include neo-shadow-inset-azul;
+                border-radius: 1.2em;
+                max-width: 22.5em;
+                width: 22em;
+                height: fit-content;
+                max-height: toEm(81);
+                margin-bottom: 1rem;
+            }
             input[type="text"] {
                 color: $branco;
                 font-size: $pequena;
                 background: transparent;
-                @include neo-shadow-inset-azul;
-                border-radius: 1.2em;
                 line-height: 1.5em;
                 padding: 1.5em;
                 max-width: 22.5em;
@@ -186,6 +193,7 @@
         margin: 0;
     }
 
+    .input-shadow,
     .call-to-newsletter-wrapper .form-newsletter input[type="text"] {
         margin-right: 1em;
         margin-bottom: 0;
