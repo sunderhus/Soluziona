@@ -1,7 +1,7 @@
 {
-    "name": "Soluziona",
+    "name": "Soluziona Energia e Meio Ambiente",
     "short_name": "Soluziona",
-    "start_url": "/Soluziona/index.html",
+    "start_url": "./index.html",
     "display": "fullscreen",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
