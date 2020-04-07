@@ -111,7 +111,7 @@
             max-width: 100%;
             margin: 0;
 
-            input:not([type="submit"]) {
+            input[type="text"] {
                 color: $branco;
                 font-size: $pequena;
                 background: transparent;
@@ -135,6 +135,10 @@
                 color: $branco;
                 font-size: $regular;
                 font-weight: bold;
+                transition: transform 0.15s linear;
+                &:hover{
+                    transform: scale(1.1);
+                }   
             }
         }
 
@@ -182,7 +186,7 @@
         margin: 0;
     }
 
-    .call-to-newsletter-wrapper .form-newsletter input:not([type=submit]) {
+    .call-to-newsletter-wrapper .form-newsletter input[type="text"] {
         margin-right: 1em;
         margin-bottom: 0;
     }

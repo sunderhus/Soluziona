@@ -4,8 +4,9 @@
     @include neo-shadow;
     border-radius: 10px;
     background: $cinza-claro;
-    .card{
-        &-header{
+
+    .card {
+        &-header {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,34 +14,47 @@
             text-align: center;
             font-size: $regular;
         }
-        &-main{
+
+        &-main {
             overflow: hidden;
             max-height: 276px;
-            img{
-                width: 100%;;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+
+            img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
             }
         }
-        &-footer{
-            padding:1em 2em;
+
+        &-footer {
+            padding: 1em 2em;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            &-descricao{
+
+            &-descricao {
                 font-size: $regular;
             }
-            &-data{
+
+            &-data {
                 font-weight: normal;
                 width: 100%;
-            }            
-            &-texto{
+            }
+
+            &-texto {
                 margin-right: 1em;
             }
-            &-icon{
+
+            &-icon {
                 margin-left: auto;
             }
         }
-        &-gallery{
+
+        &-gallery {
             display: none;
             height: 0px;
             width: 0px;
@@ -48,7 +62,8 @@
         }
     }
 }
-@media(min-width:768px){
+
+@media(min-width:768px) {
     .card-post {
         border-radius: 30px;
     }
