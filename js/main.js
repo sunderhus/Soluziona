@@ -18,12 +18,7 @@ const overlayMenuMobile = document.querySelector('#overlayMenu').addEventListene
 const toggleIdiomas = () => {
   document.querySelector(".seletor-idiomas").classList.toggle("active");
 };
-/* register SW */
-// if ("serviceWorker" in navigator) {
-//   navigator.serviceWorker.register("js/sw.js").then(function () {
-//     console.log("%c register sw", "color:yellow; background-color:black;");
-//   });
-// }
+
 /* Toggle  accordion */
 const toggleAccordion = item => {
   item.classList.toggle("active");
@@ -73,4 +68,16 @@ const trocarFormulario = (opcao) => {
   formularios.forEach(formulario => formulario.classList.remove('active'));
   opcoes.forEach(opcao => opcao.classList.remove('active'));
   ativos.forEach(itemAtivado => itemAtivado.classList.add('active'));
+}
+
+
+/* register SW */
+if ("serviceWorker" in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register("js/sw.js")
+      .then(() => {
+        console.log("%c sw ok", "color:green; background-color:#f3f3f3;");
+      });
+  });
 }
