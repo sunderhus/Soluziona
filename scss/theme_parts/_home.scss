@@ -196,6 +196,7 @@ section#ultimos-posts {
     grid-gap: 5em;
   }
   .servicos-grid {
+    
     grid-template-columns: repeat(4, 1fr);
     &-item{
       border-radius: 2em;
@@ -237,5 +238,13 @@ section#ultimos-posts {
          margin-left: 3em;
        }
      }
+  }
+
+  
+}
+
+@media (min-width:1400px) and (max-width:1600px){
+  section#ultimos-posts .grid-posts {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
   }
 }

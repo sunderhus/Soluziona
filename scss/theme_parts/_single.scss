@@ -13,13 +13,14 @@
     &-imagem {
         grid-area: img;
         max-width: 38.75em;
+        max-height: 23.3125em;
+        overflow: hidden;
+        border-radius: 1.3em;
 
         img {
             max-width: 100%;
-            border-radius: 1.3em;
-            width: toEm(620);
-            max-height: toEm(373);
-            image-rendering: optimizeSpeed;
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -28,7 +29,7 @@
 
         .conteudo-tempo span,
         .conteudo-data span {
-            font-size: toEm(18);
+            font-size: toEm(17);
             color: $azul-escuro;
             line-height: toEm(38);
         }
@@ -40,11 +41,12 @@
         .conteudo-texto {
             p {
                 margin-top: toEm(52);
-                font-size: $regular;
+                font-size: toEm(20);
                 color: $azul-escuro;
             }
-            img{
-                max-width:800px;
+
+            img {
+                max-width: 800px;
                 width: 100%;
             }
         }
@@ -193,7 +195,7 @@
             }
         }
 
-        .post-grid-conteudo .titulo-secao{
+        .post-grid-conteudo .titulo-secao {
             margin: toEm(0);
         }
     }
