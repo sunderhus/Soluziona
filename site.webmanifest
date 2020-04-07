@@ -39,7 +39,7 @@
             "type": "image/png"
         },
         {
-            "src": "assets/img/splash.png",
+            "src": "assets/img/splash512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
