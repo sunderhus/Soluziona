@@ -93,28 +93,44 @@
                     height: fit-content;
                 }
 
-                input,
-                textarea {
-                    padding: 1.5em;
+                /* Por incompatibilidade do safari com box-shadow em inputs. */
+                span.shadow {
                     @include neo-shadow-inset;
+                    border-radius: 1em;
+                    margin-bottom: 1em;
+                }
+
+                input {
+                    padding: 1.5em;
+                    border-radius: 1em;
+                    color: $azul-escuro;
+                    font-size: $pequena;
+                    background: transparent;
+                    line-height: 1.5em;
+                    border-collapse: collapse;
+                    width: 100%;
+
+                    &::placeholder {
+                        color: $azul-escuro;
+                        font-size: $pequena;
+                    }
+                  
+                }
+
+                textarea {
+                    @include neo-shadow-inset;
+                    max-width: 100%;
+                    resize: vertical;
+                    max-height: 15em;
+                    height: 15em;
+                    padding: 1.5em;
                     margin-bottom: 1em;
                     border-radius: 1em;
                     color: $azul-escuro;
                     font-size: $pequena;
                     background: transparent;
                     line-height: 1.5em;
-
-                    &::placeholder {
-                        color: $azul-escuro;
-                        font-size: $pequena;
-                    }
-                }
-
-                textarea {
-                    max-width: 100%;
-                    resize: vertical;
-                    max-height: 15em;
-                    height: 15em;
+                    border-collapse: collapse;
 
                     &::-webkit-scrollbar {
                         display: none;
@@ -159,13 +175,13 @@
 
 @media(min-width:1000px) and(max-width:1580px) {
     .grid-contato {
-      
+
         grid-template-columns: minmax(200px, 450px) minmax(400px, 700px);
     }
 }
 
-@media(min-width:1000px) and(max-width:1300px){
-   
+@media(min-width:1000px) and(max-width:1300px) {
+
     .grid-contato .contato-formularios {
         &-opcao {
             max-width: 100%;

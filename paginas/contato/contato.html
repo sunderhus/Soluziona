@@ -62,11 +62,12 @@
                 <li><a href="#">Germany</a></li>
             </ul>
         </nav>
-        <span class="mobile-menu-icon"onclick="openNav()"><img src="../../assets/svg/menu-icon.svg" alt="Abrir menu"></span>
+        <span class="mobile-menu-icon" onclick="openNav()"><img src="../../assets/svg/menu-icon.svg"
+                alt="Abrir menu"></span>
         <div id="menuMobile" class="sidenav">
             <div class="menu-mobile-head">
                 <h3>Menu</h3>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
             <ul class="menu-mobile-body">
                 <li class="menu-mobile-item">
@@ -78,11 +79,14 @@
                 <li class="menu-mobile-item">
                     <a href="../../index.html#servicos" title="navegar para Home">Serviços</a>
                     <ul class="sub-items">
-                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos Ambientais</a></li>
+                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos
+                                Ambientais</a></li>
                         <li class="sub-item-link"><a href="../servicos/engenharia.html">Engenharia</a></li>
                         <li class="sub-item-link"><a href="../servicos/geoprocessamento.html">Geoprocessamento</a></li>
-                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a sustentabilidade</a></li>
-                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica Ambiental</a></li>
+                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a
+                                sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica
+                                Ambiental</a></li>
                     </ul>
                 </li>
                 <li class="menu-mobile-item">
@@ -99,16 +103,16 @@
                 <div class="menu-mobile-redes-sociais">
                     <a href="" class="">
                         <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="" class="">
                         <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="" class="">
                         <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                     <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
                         <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
-                    </a>  
+                    </a>
                 </div>
                 <div class="menu-mobile-idiomas">
                     <a href="#">Português</a>
@@ -169,29 +173,48 @@
                     <button onclick="trocarFormulario('opcao1')" class="contato-formularios-opcao opcao1 active">
                         <span>Contato Comercial</span>
                     </button>
-                    <button onclick="trocarFormulario('opcao2')"class="contato-formularios-opcao opcao2">
+                    <button onclick="trocarFormulario('opcao2')" class="contato-formularios-opcao opcao2">
                         <span>Envio de Currículo</span>
                     </button>
                 </div>
                 <div class="formularios">
-                    <form action="#" method="POST" name="comercial" class="formulario-contato opcao1 active">
-                        <input required type="text" name="nome" placeholder="Nome">
-                        <input required type="email" name="email" placeholder="E-mail">
-                        <input required type="tel" name="telefone" placeholder="Telefone">
-                        <input required type="text" name="empresa" placeholder="Empresa">
-                        <textarea required  name="mensagem" placeholder="Mensagem"></textarea>
+                    <form action="#" method="POST" autocomplete="off" name="comercial"
+                        class="formulario-contato opcao1 active">
+                        <span class="shadow">
+                            <input required type="text" name="nome" placeholder="Nome">
+                        </span>
+                        <span class="shadow">
+                            <input required type="email" name="email" placeholder="E-mail">
+                        </span>
+                        <span class="shadow">
+                            <input required type="tel" name="telefone" placeholder="Telefone">
+                        </span>
+                        <span class="shadow">
+                            <input required type="text" name="empresa" placeholder="Empresa">
+                        </span>
+                        <textarea required name="mensagem" placeholder="Mensagem"></textarea>
+
                         <input type="submit" value="Enviar mensagem">
                     </form>
-                    <form action="#" method="POST" name="curriculo" class="formulario-contato opcao2">
-                        <input required type="text" name="nome"   placeholder="Nome">
-                        <input required type="email" name="email" placeholder="E-mail">
-                        <input required type="tel" name="telefone" placeholder="Telefone">
-                        <input required type="file" accept="image/png, image/jpeg" name="anexo"   placeholder="Anexo">
-                        <textarea required  name="mensagem" placeholder="Mensagem"></textarea>
+                    <form autocomplete="off" action="#" method="POST" name="curriculo"
+                        class="formulario-contato opcao2">
+                        <span class="shadow">
+                            <input required type="text" name="nome" placeholder="Nome">
+                        </span>
+                        <span class="shadow">
+                            <input required type="email" name="email" placeholder="E-mail">
+                        </span>
+                        <span class="shadow">
+                            <input required type="tel" name="telefone" placeholder="Telefone">
+                        </span>
+                        <span class="shadow">
+                            <input required type="file" accept="image/png, image/jpeg" name="anexo" placeholder="Anexo">
+                        </span>
+                        <textarea required name="mensagem" placeholder="Mensagem"></textarea>
                         <input type="submit" value="Enviar Currículo">
                     </form>
                 </div>
-                   
+
             </div>
         </section>
     </main>
