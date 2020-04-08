@@ -118,13 +118,12 @@
                 }
 
                 textarea {
-                    @include neo-shadow-inset;
                     max-width: 100%;
                     resize: vertical;
                     max-height: 15em;
                     height: 15em;
                     padding: 1.5em;
-                    margin-bottom: 1em;
+                    width: 100%;
                     border-radius: 1em;
                     color: $azul-escuro;
                     font-size: $pequena;
