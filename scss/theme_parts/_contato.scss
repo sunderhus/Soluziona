@@ -134,6 +134,10 @@
                     &::-webkit-scrollbar {
                         display: none;
                     }
+                    &::placeholder {
+                        color: $azul-escuro;
+                        font-size: $pequena;
+                    }
                 }
 
                 input[type=submit] {
