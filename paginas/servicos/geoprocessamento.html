@@ -1,0 +1,377 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluziona - Energia e Meio Ambiente</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="../../site.webmanifest">
+    <!-- fivicons Soluziona -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../../assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Soluziona">
+    <meta name="application-name" content="Soluziona">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- CSS SwipeJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- CSS glightbox -->
+    <link rel="stylesheet" href="../../css/glightbox.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <span id="overlayMenu" class="overlay-full-size"></span>
+    <header class="wrapper" id="header">
+        <a class="logo" href="../../index.html" title="Voltar para a página inicial">
+            <img src="../../assets/svg/logo.svg" alt="Logo soluziona" aria-role="logo">
+        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="../../index.html#servicos" title="navegar para Serviços">Serviços</a>
+                </li>
+                <li>
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li>
+                    <a href="../contato/contato.html" title="navegar para Home">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="seletor-idiomas" onclick="toggleIdiomas()">
+            <span>Português</span>
+            <img src="../../assets/svg/arrow-down.svg" alt="Ver mais">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Germany</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-icon" onclick="openNav()"><img src="../../assets/svg/menu-icon.svg"
+                alt="Abrir menu"></span>
+        <div id="menuMobile" class="sidenav">
+            <div class="menu-mobile-head">
+                <h3>Menu</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <ul class="menu-mobile-body">
+                <li class="menu-mobile-item">
+                    <a href="../../index.html" title="navegar para Home">Home</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../about/about.html" title="Página de Sobre">Sobre</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../../index.html#servicos" title="navegar para Home">Serviços</a>
+                    <ul class="sub-items">
+                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos
+                                Ambientais</a></li>
+                        <li class="sub-item-link"><a href="../servicos/engenharia.html">Engenharia</a></li>
+                        <li class="sub-item-link"><a href="../servicos/geoprocessamento.html">Geoprocessamento</a></li>
+                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a
+                                sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica
+                                Ambiental</a></li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../blog/blog.html" title="navegar para o Blog">Blog</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../contato/contato.html" title="navegar para Contato">Contato</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-footer">
+                <div class="menu-mobile-redes-sociais">
+                    <a href="" class="">
+                        <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                        <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-mobile-idiomas">
+                    <a href="#">Português</a>
+                    <a href="#">English</a>
+                    <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="servico-topo wrapper">
+            <div class="servico-topo-texto">
+                <h2 class="titulo-secao">
+                    Geoprocessamento
+                </h2>
+                <a href="../contato/contato.html">
+                    Entrar em contato
+                </a>
+            </div>
+            <div class="servico-topo-imagem">
+                <img src="../../assets/img/Geoprocessamento-Soluziona.jpg" alt="tartaruga nadando">
+                <section class="wrapper fixed-shape-right">
+                    <img src="../../assets/svg/fixed-wave.svg" alt="simbolo de ondas">
+                </section>
+            </div>
+        </section>
+        <section class="servico-descricao wrapper">
+            <div class="servico-descricao-icon">
+                <img src="../../assets/svg/geoprocessamento_icon.svg" alt="ícone de geoprocessamento de terrenos">
+            </div>
+            <div class="servico-descricao-texto">
+                O Geoprocessamento é um procedimento que utiliza uma base cartográfica georreferenciada para elaborar
+                mapas, cartas e plantas, essenciais na tomada de decisões para projetos ambientais.<br>
+                <br>
+                Utilizamos o geoprocessamento como ferramenta aliada no processo de licenciamento ambiental,
+                considerando a facilidade de realizar um diagnóstico com precisão das características geográficas da
+                área de estudo com o intuito de facilitar o planejamento e reduzir custos para o empreendedor.<br>
+            </div>
+
+            <div class="detalhe-descricao">
+
+            </div>
+        </section>
+        <!-- accordion com infomações do serviço -->
+        <section class="servico-informacoes wrapper">
+            <h4>Mais informações</h4>
+            <div class="informacoes-accordion">
+
+                <button class="accordion-titulo">
+                    <span>Cadastro Ambiental Rural - CAR</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Cadastro Ambiental Rural – CAR foi criado com o objetivo de cadastrar as Áreas de Preservação
+                        Permanente e demais zoneamentos com função de preservar o meio ambiente e até mesmo compensar
+                        áreas degradadas. É por meio da inscrição no Sistema de Cadastro Ambiental Rural – SISCAR
+                        (sistema gerenciador dos dados ambientais), que o governo vem fazendo a gestão sobre o uso e
+                        ocupação do solo, bem como o planejamento ambiental territorial.<br>
+                        <br>
+                        O Cadastro é de responsabilidade do proprietário, obrigatório para todos os imóveis rurais e a
+                        não realização implicará em perdas de créditos e financiamentos.<br>
+                        <br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos uma equipe qualificada para auxiliar na realização do cadastro de forma rápida e
+                        eficiente do ínicio ao fim</p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Levantamento Georreferenciado</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Levantamento Georreferenciado consiste em localizar e identificar paisagens ou entidades
+                        existentes na superfície terrestre, com a utilização de coordenadas geográficas conhecidas.
+                        Utilizamos as seguintes metodologias, que são escolhidas em base ao objetivo do levantamento:
+                        Planimétrico (horizontal - X e Y), Altimétrico (vertical - Z) e o Planialtimétrico (horizontal e
+                        vertical - X, Y e Z) e tem como objetivo auxiliar na tomada de decisões.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos uma equipe qualificada e equipamentos e softwares de alta tecnologia para realizar a
+                        melhor escolha de metodologia a ser utilizada, bem como atender a demanda de georreferenciamento
+                        com a integração de dados para confecção de mapas em ambiente SIG.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Estudos de Uso e Ocupação do Solo</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicinA concepção destes estudos é realizada por meio
+                        de interpretação visual ou por processamento de imagens, apresentando suas formas de uso e
+                        ocupação através de um mapeamento que possibilita uma classificação da vegetação presente e das
+                        atividades desenvolvidas no local.vero repellendus exercitationem incidunt veniam saepe
+                        assumenda quam culpa reiciendis, nisi
+                        possimus a labore quas blanditiis minima beatae?
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos uma equipe qualificada e equipamentos e softwares de alta tecnologia  para realizar o estudos de uso e ocupação do solo.<br>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- banner azul de call to action -->
+        <section class="call-to-action wrapper">
+            <a href="../contato/contato.html">
+                <span>
+                    Ficou interessado em neste serviço?<br>
+                    Entre em contato com nossa equipe para mais informações.
+                </span>
+            </a>
+        </section>
+        <!-- Posts relacionados  -->
+        <section id="ultimos-posts" class="wrapper">
+            <h3 class="titulo-secao">Posts relacionados com este serviço</h3>
+            <div class="grid-posts">
+                <!-- cards para home , servicos e blog -->
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/abelha.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/macaco_na_arvore.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/caminhoes_trabalhando.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="detalhe-footer wrapper">
+            <img src="../../assets/svg/wave-footer.svg" alt="voltar ao topo">
+        </section>
+        <section class="voltar-ao-topo wrapper">
+            <a href="#header">
+                <img src="../../assets/svg/arrow-up.svg" alt="Voltar ao topo">
+            </a>
+        </section>
+        <section id="telefones" class="wrapper">
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS">
+                    <p>Rua Darvin Marosin, 210 - Marau/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS">
+                    <p>Rua Coronel Corte Real, 928 - Porto Alegre/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC">
+                    <p>Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC</p>
+                </a>
+            </div>
+        </section>
+        <section id="redes-sociais" class="wrapper">
+            <a href="#"><img src="../../assets/svg/linkedinn.svg" alt="Rede Social Soluziona: Linkedin"></a>
+            <a href="#"><img src="../../assets/svg/instagram.svg" alt="Rede Social Soluziona: Instagram"></a>
+            <a href="#"><img src="../../assets/svg/facebook.svg" alt="Rede Social Soluziona: Facebook"></a>
+        </section>
+        <section id="copyright" class="wrapper">
+            <p class="copyright-text">Todos os direitos reservador 2020 - Soluziona</p>
+        </section>
+    </footer>
+    <!-- main JS -->
+    <script src="../../js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 10000,
+            },
+            loop: true,
+            dynamicBullets: true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

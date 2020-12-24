@@ -1,0 +1,57 @@
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes grow-from-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50px);
+    display: hidden;
+  }
+}
+
+@keyframes fade-in-box-shadow {
+  from {
+    box-shadow: transparent transparent;
+  }
+
+  to {
+    @include neo-shadow-inset;
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+    
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes link-menu-desktop {
+  from {
+    width:0 ;
+  }
+ 
+  to {
+    transform: 110%;
+  }
+}

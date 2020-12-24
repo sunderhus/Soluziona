@@ -1,0 +1,104 @@
+#depoimentos {
+    padding-top: 3em;
+    .swiper-container {
+        min-height: 150px;
+        border-radius: 1em;
+        @include neo-shadow;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        background-color: $cinza-claro;
+        min-height: 350px;
+
+        .depoimento {
+            color: $azul-escuro;
+            display: flex;
+            flex-flow: column;
+            justify-items: flex-start;
+            align-items: flex-start;
+            padding: 0em 3em;
+
+            &-main {
+                font-size: $pequena;
+            }
+
+            &-footer {
+                font-size: $x-pequena;
+            }
+
+            &-header {
+                &-empresa {
+                    font-size: $x-regular;
+                }
+
+                &-nome {
+                    font-size: $regular;
+                }
+            }
+
+            &-header,
+            &-footer,
+            &-main {
+                text-align: left;
+            }
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .swiper-button-next {
+        background-image: url(assets/svg/double-arrow-next.svg);
+        right: 0.75em;
+    }
+
+    .swiper-button-prev {
+        background-image: url(assets/svg/double-arrow-prev.svg);
+        left: 0.75em;
+
+    }
+
+    .swiper-button-next:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+        content: '';
+    }
+
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+        content: '';
+    }
+
+
+    @media(min-width:768px) {
+        .swiper-slide {
+            &-active {
+                .depoimento:first-of-type {
+                    padding-right: 0px;
+                }
+            }
+
+            &-next {
+                .depoimento:first-of-type {
+                    padding-left: 0px;
+                }
+            }
+
+            .depoimento {
+                padding: 0em 5em;
+            }
+        }
+
+        .swiper-button-next {
+            right: 1.8em;
+        }
+
+        .swiper-button-prev {
+            left: 1.8em;
+        }
+    }
+}

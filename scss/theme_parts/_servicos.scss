@@ -1,0 +1,172 @@
+%max-width-servico{
+    max-width: 1400px;
+}
+
+.servico{
+    &-topo{
+
+        position: relative;
+        @extend %max-width-servico;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 52px;
+        &-texto{
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: column;
+            align-items: flex-start;
+            height: 100%;
+            margin-right: 3em;
+            margin-bottom: 4em;
+            h2{
+                margin-left: 0px;
+                max-width: 550px;
+            }
+            a{
+                color: $laranja;
+                font-weight: bold;
+                font-size: $grande;
+            }
+        }
+        &-imagem{
+            img{
+                border-radius: 1.5em;
+                width: 100%;
+                max-width: 550px;
+                position: relative;
+            }
+        }
+    }
+    &-descricao{
+        @extend %max-width-servico;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3em 0em;
+        &-icon{
+            img{
+                height:  3.5em;
+            }
+        }
+        &-texto{
+            color: $azul-escuro;
+            font-size: $pequena;
+            line-height: 1.5em;
+        }
+        .detalhe-descricao{
+            max-width: 250px;
+            border: 2px solid $azul-claro;
+            border-radius: 4px;
+            margin-bottom: 6em;
+            margin-top: -0.5em;
+          
+        }
+    }
+    &-informacoes{
+        @extend %max-width-servico;
+        h4{
+            color:$verde-claro;
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
+    }
+}
+.informacoes-accordion{
+    display: grid;
+    gap: 0.8em;    
+    .accordion-titulo{
+        cursor: pointer;
+        outline: none;
+        border: none;
+        padding: 1em 1em;
+        color: $azul-escuro;
+        font-size: 1.2em;
+        font-weight: bold;
+        @include neo-shadow;
+        border-radius: 1em;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        background-color: $cinza-claro;
+        &.active{
+            animation: fade-in-box-shadow 0.50s linear forwards;
+            img{
+                transform: rotateZ(-180deg);
+                transition: transform 0.3s linear ;
+            }
+        }
+        img{
+            position: absolute;
+            right: 1em;
+            top: 37%;
+            width: $regular;
+        }
+        span{
+            display: flex;
+            max-width: 90%;
+        }
+
+    }
+    div.accordion-descricao{
+        display: block;
+        text-align: left;
+        opacity: 0;
+        height: 0px;
+        overflow: hidden;
+        font-size: $x-pequena;
+        color: $azul-escuro;
+        transition: padding-top 0.5s linear;
+        &.active{
+            padding: 1em;
+            animation: show-info-drescription 0.5s linear 0s 1 forwards;
+        }
+    }
+}
+
+
+@keyframes show-info-drescription{
+    from{
+        height: 0px;
+        opacity: 0;
+
+    }
+    45%{
+        height: 100%;
+        opacity: 0;
+    }
+    to{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+
+@media(min-width:768px){
+    .informacoes-accordion{
+        .accordion-titulo{
+            padding: 1em 2em;
+            font-size: 1.5em;
+            
+        }
+        div.accordion-descricao{
+            &.active{
+                padding: 1em 3em;
+                animation: show-info-drescription 0.5s linear 0s 1 forwards;
+            }
+        }
+    }
+    .servico{
+        &-descricao{
+            &-icon{
+                img{
+                    height:  auto;
+                }
+            }
+            &-texto{
+                color: $azul-escuro;
+                font-size: $regular;
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+.about-topo {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+
+    &-texto {
+        max-width: 950px;
+        font-size: $pequena;
+        margin-bottom: 3em;
+        color: $azul-escuro;
+        line-height: 1.5em;
+    }
+
+    &-imagem {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            transition: max-width 0.4s linear;
+            width: auto;
+            max-width: 15em;
+        }
+    }
+}
+
+.detalhe-descricao-verde {
+    display: none;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 4em;
+
+    .valor {
+        max-width: 628px;
+
+        p {
+            line-height: 1.5em;
+            color: $azul-escuro;
+            font-size: $pequena;
+        }
+    }
+}
+
+
+
+.diferenciais {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 625px));
+    justify-content: space-between;
+
+    &-listagem {
+        padding: 0px;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 1em;
+
+        .numero {
+            padding: 0.3em 0.6em;
+            border-radius: 50%;
+            background-color: $azul-transparente;
+            width: fit-content;
+            color: $azul-escuro;
+            font-size: $x-regular;
+            font-weight: bold;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .texto {
+            max-width: 550px;
+
+            p {
+                font-size: $pequena;
+                color: $azul-escuro;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .diretoria {
+        max-width: 628px;
+        background-color: #EBE9E9;
+        border-radius: 2em;
+        padding: 2em;
+        padding-bottom: 0px;
+        position: relative;
+        height: fit-content;
+
+        img {
+            max-width: 555px;
+            width: 100%;
+            height: auto;
+        }
+
+        p.legenda {
+            color: $azul-escuro;
+            position: absolute;
+            bottom: -2em;
+            left: 1em;
+            margin: 0;
+        }
+    }
+}
+
+.diferenciais-empresa {
+    margin-bottom: 7em;
+}
+
+.nossa-equipe {
+    background: $verde-agua;
+    padding: 3em 0 9em 0em;
+    position: relative;
+
+    .fixed-shape {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        left: unset;
+    }
+
+    h3 {
+        color: $branco;
+        max-width: 280px;
+        text-align: left;
+    }
+
+    .grid-colaboradores {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 220px));
+        gap: 2em;
+
+        .colaborador {
+            justify-self: flex-start;
+            min-height: 330px;
+
+            img {
+                border-radius: 1.5em;
+                max-width: 200px;
+                width: auto;
+                max-height: 250px;
+            }
+
+            p {
+                padding-left: 1em;
+            }
+
+            .nome {
+                color: $branco;
+                margin-bottom: 0px;
+                font-size: $pequena;
+            }
+
+            .profissao {
+                font-size: $x-pequena;
+                color: $branco;
+                margin: 0px;
+            }
+
+        }
+
+        .colaborador.convite {
+            background-color: $branco;
+            min-height: unset;
+            height: 250px;
+            border-radius: 1.5em;
+            transition: transform 0.20s linear;
+
+            &.pulse {
+                animation: grow 1.20s linear 0.25s 1;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            a.convite-link {
+                padding: 1em;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-flow: column;
+                max-width: 200px;
+
+
+                p:first-child() {
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    font-weight: normal;
+                    width: 95%;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .nossa-equipe h3 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-colaboradores {
+        justify-content: center;
+    }
+}
+
+@media(min-width:768px) {
+    .about-topo {
+        margin-bottom: 9em;
+
+        &-texto {
+            margin-right: 10px;
+            font-size: $regular;
+            color: $azul-escuro;
+        }
+
+        img {
+            width: auto;
+            max-width: 20em;
+        }
+    }
+
+    .detalhe-descricao-verde {
+        display: block;
+        max-width: 250px;
+        border: 2px solid $verde-claro;
+        border-radius: 4px;
+        margin-top: 2em;
+    }
+
+    .diferenciais-empresa {
+        margin-bottom: 9em;
+    }
+}
+
+@media(min-width:1200px) {
+    .about-topo {
+        display: grid;
+        grid-template-columns: minmax(auto, 950px) minmax(auto, 310px);
+        gap: 2em;
+
+        &-texto {
+            margin-bottom: 0px;
+        }
+
+        &-imagem {
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+        }
+    }
+
+    .valores-grid {
+        .valor {
+            max-width: 628px;
+
+            p {
+                color: $azul-escuro;
+                font-size: $pequena;
+            }
+        }
+    }
+}
+
+@media (min-width:1000px) and (max-width:1400px) {
+    .diferenciais {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 525px));
+    }
+}

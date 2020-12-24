@@ -1,0 +1,423 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluziona - Energia e Meio Ambiente - Engenharia</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="../../site.webmanifest">
+    <!-- fivicons Soluziona -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../../assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Soluziona">
+    <meta name="application-name" content="Soluziona">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- CSS SwipeJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- CSS glightbox -->
+    <link rel="stylesheet" href="../../css/glightbox.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <span id="overlayMenu" class="overlay-full-size"></span>
+    <header class="wrapper" id="header">
+        <a class="logo" href="../../index.html" title="Voltar para a página inicial">
+            <img src="../../assets/svg/logo.svg" alt="Logo soluziona" aria-role="logo">
+        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="../../index.html#servicos" title="navegar para Serviços">Serviços</a>
+                </li>
+                <li>
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li>
+                    <a href="../contato/contato.html" title="navegar para Home">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="seletor-idiomas" onclick="toggleIdiomas()">
+            <span>Português</span>
+            <img src="../../assets/svg/arrow-down.svg" alt="Ver mais">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Germany</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-icon" onclick="openNav()"><img src="../../assets/svg/menu-icon.svg"
+                alt="Abrir menu"></span>
+        <div id="menuMobile" class="sidenav">
+            <div class="menu-mobile-head">
+                <h3>Menu</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <ul class="menu-mobile-body">
+                <li class="menu-mobile-item">
+                    <a href="../../index.html" title="navegar para Home">Home</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../about/about.html" title="Página de Sobre">Sobre</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../../index.html#servicos" title="navegar para Home">Serviços</a>
+                    <ul class="sub-items">
+                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos
+                                Ambientais</a></li>
+                        <li class="sub-item-link"><a href="../servicos/engenharia.html">Engenharia</a></li>
+                        <li class="sub-item-link"><a href="../servicos/geoprocessamento.html">Geoprocessamento</a></li>
+                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a
+                                sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica
+                                Ambiental</a></li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../blog/blog.html" title="navegar para o Blog">Blog</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../contato/contato.html" title="navegar para Contato">Contato</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-footer">
+                <div class="menu-mobile-redes-sociais">
+                    <a href="" class="">
+                        <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                        <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-mobile-idiomas">
+                    <a href="#">Português</a>
+                    <a href="#">English</a>
+                    <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="servico-topo wrapper">
+            <div class="servico-topo-texto">
+                <h2 class="titulo-secao">
+                    Engenharia
+                </h2>
+                <a href="../contato/contato.html">
+                    Entrar em contato
+                </a>
+            </div>
+            <div class="servico-topo-imagem">
+                <img src="../../assets/img/Engenharia-Soluziona.jpg" alt="tartaruga nadando">
+                <section class="wrapper fixed-shape-right fixed-circle">
+                    <img src="../../assets/svg/circulo.svg" alt="figura de uma circunferencia">
+                </section>
+            </div>
+        </section>
+
+        <section class="servico-descricao wrapper">
+            <div class="servico-descricao-icon">
+                <img src="../../assets/svg/capacete_icon.svg" alt="ícone de capacete">
+            </div>
+            <div class="servico-descricao-texto">
+                A Soluziona conta com equipe técnica multidisciplinar, com experiência em soluções de engenharia e
+                gestão ambiental, focada em soluções eficazes e sustentáveis para o seu negócio.<br>
+                <br>
+
+                Elaboramos e implantamos projetos para pessoas físicas e jurídicas que almejam agregar valor à marca,
+                cuidando do meio ambiente, aumentando a eficiência dos processos e a rentabilidade, reduzindo riscos e
+                custos por meio da adoção de práticas sustentáveis.<br>
+            </div>
+
+            <div class="detalhe-descricao">
+
+            </div>
+        </section>
+
+        <!-- accordion com infomações do serviço -->
+        <section class="servico-informacoes wrapper">
+            <h4>Mais informações</h4>
+
+            <div class="informacoes-accordion">
+
+                <button class="accordion-titulo">
+                    <span>Projeto Hidrossanitário</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Projeto Hidrossanitário consiste em desenvolver sistemas de distribuição de água e
+                        recolhimento de efluentes sanitários e pluviais.. É um item essencial para o conforto e
+                        segurança dos usuários da edificação e do entorno. Quando mal planejado, causa transtornos de
+                        ordem financeira significativa, além do risco à saúde. Este projeto deve atender às
+                        especificações legais quanto ao abastecimento de água, tratamento de esgoto sanitários e
+                        destinação correta de esgoto pluvial. No caso do reúso de água, seja da chuva ou residual, um
+                        projeto hidrossanitário bem elaborado torna-se ainda mais importante, diminuindo custos de
+                        implantação e intervenções futuras.<br>
+                        <br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica capacitada e com experiência na elaboração de Projetos
+                        Hidrossanitários, garantindo assim um projeto de qualidade, eficiente e sustentável.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Projeto de Drenagem</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        A Drenagem é responsável pela captação e o destino da água da chuva, a fim de conduzir a vazão e
+                        evitar empoçamentos, erosão e inundações. Sistemas de drenagem podem ser locais, como em áreas
+                        de canteiro de obras e edificações existentes, para direcionar pequenas vazões, ou regionais,
+                        como drenagem urbana e correção de taludes em áreas rurais, a fim de evitar processos erosivos,
+                        deslocamento de massa, inundações e assoreamento de corpos d'água.<br>
+                        Um adequado projeto de drenagem não só evita transtornos na vida cotidiana como também pode ser
+                        o responsável por evitar desastres ambientais em larga escala.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica capacitada e com experiência na elaboração de Projetos de Drenagem,
+                        garantindo assim um projeto de qualidade, eficiente e sustentável.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Laudo Técnico de Vistoria Predial</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Laudo Técnico de Vistoria Predial tem como escopo verificar as condições de conservação,
+                        estabilidade e segurança de um edifício e nos casos em que forem necessários, apresentar as
+                        medidas reparadoras para garantir a qualidade, segurança e aumentar a vida útil do local. <br>
+                        Serão avaliados diversos pontos, como: a estrutura, instalações hidráulicas e elétricas,
+                        impermeabilização, ventilação, coberturas, telhados, revestimentos internos e externos, sistema
+                        de combate à incêndios, sistema de proteção à descargas elétricas, entre outros. <br>
+                        <br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica capacitada e com experiência na elaboração de Laudo Técnico de Vistoria
+                        Predial.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Central de Resíduos para Armazenamento Temporário</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Realizamos projetos de Central de Resíduos para Armazenamento Temporário para que os resíduos
+                        possam ser armazenados de modo correto em local seguro até o acúmulo do volume necessário para
+                        que possa ser encaminhado ao seu destino final para que os impactos ambientais sejam minimizados
+                        ao máximo.
+                        <br><br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica capacitada e com experiência na elaboração de projetos de engenharia, garantindo assim um projeto de qualidade, eficiente e sustentável.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Sistemas de reuso de água</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Planejamos sistemas de reuso de água, seja ela de origem pluvial ou residual. Em crescente demanda, projetos de captação de água da chuva e reservação de águas residuais são ações eficientes na diminuição dos custos básicos de uma edificação e que trazem grande ganho ambiental, diminuindo o consumo e o desperdício de água potável, sendo uma solução sustentável de relativa facilidade de aplicação, podendo ser implantada em edificações novas ou existentes.
+                        <br><br>
+                    </p>
+                </div>
+                
+                <button class="accordion-titulo">
+                    <span>Projeto de Captação da Água da Chuva</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Realizamos projeto  e planejamento de aproveitamento de água da chuva para fins não potáveis, via dimensionamento de reservatórios para captação e armazenamento. A captação consiste em um sistema que coleta a água da chuva a partir de um telhado e envia para um reservatório, evitando assim, o uso de água potável para fins desnecessários e diminuindo o uso da rede pública.
+                        <br><br>
+                    </p>
+                </div>
+
+               
+            </div>
+
+
+
+        </section>
+        <!-- banner azul de call to action -->
+        <section class="call-to-action wrapper">
+            <a href="../contato/contato.html">
+                <span>
+                    Ficou interessado em neste serviço?<br>
+                    Entre em contato com nossa equipe para mais informações.
+                </span>
+            </a>
+        </section>
+        <!-- Posts relacionados  -->
+        <section id="ultimos-posts" class="wrapper">
+            <h3 class="titulo-secao">Posts relacionados com este serviço</h3>
+            <div class="grid-posts">
+                <!-- cards para home , servicos e blog -->
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/madeira_cortada.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/camposVerdes.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/tartaruga.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="detalhe-footer wrapper">
+            <img src="../../assets/svg/wave-footer.svg" alt="voltar ao topo">
+        </section>
+        <section class="voltar-ao-topo wrapper">
+            <a href="#header">
+                <img src="../../assets/svg/arrow-up.svg" alt="Voltar ao topo">
+            </a>
+        </section>
+        <section id="telefones" class="wrapper">
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS">
+                    <p>Rua Darvin Marosin, 210 - Marau/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS">
+                    <p>Rua Coronel Corte Real, 928 - Porto Alegre/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC">
+                    <p>Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC</p>
+                </a>
+            </div>
+        </section>
+        <section id="redes-sociais" class="wrapper">
+            <a href="#"><img src="../../assets/svg/linkedinn.svg" alt="Rede Social Soluziona: Linkedin"></a>
+            <a href="#"><img src="../../assets/svg/instagram.svg" alt="Rede Social Soluziona: Instagram"></a>
+            <a href="#"><img src="../../assets/svg/facebook.svg" alt="Rede Social Soluziona: Facebook"></a>
+        </section>
+        <section id="copyright" class="wrapper">
+            <p class="copyright-text">Todos os direitos reservador 2020 - Soluziona</p>
+        </section>
+    </footer>
+    <!-- main JS -->
+    <script src="../../js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 10000,
+            },
+            loop: true,
+            dynamicBullets: true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

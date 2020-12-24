@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Refresh" content="0; url=https://soluzionaenergia.com/teste" /> -->
+    <link rel="canonical" href="https://soluzionaenergia.com"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Soluziona Energia é uma empresa de engenharia ambiental.">
+    <link rel="alternate" hreflang="pt" href="https://soluzionaenergia.com" />
+    <link rel="alternate" hreflang="en" href="https://soluzionaenergia.com/en" />
+    <link rel="alternate" hreflang="de" href="https://soluzionaenergia.com/de" />
+    <title>Soluziona - Energia e Meio Ambiente - Página Inicial</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="./site.webmanifest">
+    <!-- fivicons Soluziona -->
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Soluziona">
+    <meta name="application-name" content="Soluziona">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS SwipeJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- CSS glightbox -->
+    <link rel="stylesheet" href="./css/glightbox.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <span id="overlayMenu" class="overlay-full-size"></span>
+    <header class="wrapper" id="header">
+        <a class="logo" href="./index.html" title="Voltar para a página inicial">
+            <img src="assets/svg/logo.svg" alt="Logo soluziona" aria-role="logo">
+        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="./index.html#servicos" title="navegar para Serviços">Serviços</a>
+                </li>
+                <li>
+                    <a href="paginas/portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li>
+                    <a href="paginas/contato/contato.html" title="navegar para Home">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="seletor-idiomas" onclick="toggleIdiomas()">
+            <span>Português</span>
+            <img src="assets/svg/arrow-down.svg" alt="ver mais">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Germany</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-icon"onclick="openNav()"><img src="assets/svg/menu-icon.svg" alt="Abrir menu"></span>
+        <div id="menuMobile" class="sidenav">
+            <div class="menu-mobile-head">
+                <h3>Menu</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+            </div>
+            <ul class="menu-mobile-body">
+                <li class="menu-mobile-item">
+                    <a href="./index.html" title="navegar para Home">Home</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="paginas/about/about.html" title="Página de Sobre">Sobre</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="./index.html#servicos" title="navegar para Home">Serviços</a>
+                    <ul class="sub-items">
+                        <li class="sub-item-link"><a href="paginas/servicos/licenciamento.html">Licenciamento e Estudos Ambientais</a></li>
+                        <li class="sub-item-link"><a href="paginas/servicos/engenharia.html">Engenharia</a></li>
+                        <li class="sub-item-link"><a href="paginas/servicos/geoprocessamento.html">Geoprocessamento</a></li>
+                        <li class="sub-item-link"><a href="paginas/servicos/ecoinovacao.html">Ecoinovação para a sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="paginas/servicos/consultoria.html">Consultoria Jurídica Ambiental</a></li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="paginas/portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="paginas/blog/blog.html" title="navegar para o Blog">Blog</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="paginas/contato/contato.html" title="navegar para Contato">Contato</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-footer">
+                <div class="menu-mobile-redes-sociais">
+                    <a href="" class="">
+                        <img src="assets/svg/facebook_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="" class="">
+                        <img src="assets/svg/intagram_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="" class="">
+                        <img src="assets/svg/linkedinn_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                        <img src="assets/svg/whatsapp_icon_branco.svg" alt="">
+                    </a>  
+                </div>
+                <div class="menu-mobile-idiomas">
+                    <a href="#">Português</a>
+                    <a href="#">English</a>
+                    <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class=" home-slider wrapper">
+            <!-- Slider main container -->
+            <div class="swiper-container-top">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Soluções personalizadas</h2>
+                            <a href="paginas/about/about.html">Saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/Home-Soluziona1.jpg" alt="Imagem com um passaro no centro">
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Respeito ao meio ambiente</h2>
+                            <a href="paginas/about/about.html">Saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/Home-Soluziona2.jpg" alt="Imagem com uma grande vegetação, viva e de grande porte.">
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide home-slider-item">
+                        <div class="home-slider-text">
+                            <h2 class="titulo-secao">Desenvolvimento sustentável</h2>
+                            <a href="paginas/about/about.html">Saiba mais</a>
+                        </div>
+                        <div class="home-slider-img">
+                            <img src="assets/img/Home-Soluziona3.jpg" alt="Imagem com uma linda cachoeira ao centro e uma barreira alta de rocha.">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+             <div class="swiper-pagination-top"></div>
+            </div>
+        </section>
+        <section class="wrapper fixed-shape">
+            <img src="assets/svg/fixed-wave.svg" alt="">
+        </section>
+        <section id="servicos" class="servicos-grid wrapper">
+            <div class="servicos-grid-item">
+                <h2 class="titulo-secao">Conheça as soluções</h2>
+                <p class="descricao-secao">
+                    Fornecemos soluções personalizadas em energia e meio ambiente com compromisso de responsabilidade
+                    social e desenvolvimento sustentável.
+                </p>
+            </div>
+            <div class="servicos-grid-item mini-card">
+                <a href="paginas/servicos/licenciamento.html">
+                    <div class="mini-card-icon">
+                        <img src="assets/svg/licenciamento_icon.svg" alt="Ícone de licenciamento">
+                    </div>
+                    <div class="mini-card-texto">
+                        <p>Licenciamento e Estudos Ambientais</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="servicos-grid-item mini-card">
+                <a href="paginas/servicos/ecoinovacao.html">
+                    <div class="mini-card-icon">
+                        <img src="assets/svg/ecoinovacao_icon.svg" alt="Ícone de Ecoinovação">
+                    </div>
+                    <div class="mini-card-texto">
+                        <p>Ecoinovação para a sustentabilidade</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="servicos-grid-item mini-card">
+                <a href="paginas/servicos/geoprocessamento.html">
+                    <div class="mini-card-icon">
+                        <img src="assets/svg/geoprocessamento_icon.svg" alt="Ícone de Ecoinovação">
+                    </div>
+                    <div class="mini-card-texto">
+                        <p>Geoprocessamento</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="servicos-grid-item mini-card">
+                <a href="paginas/servicos/engenharia.html">
+                    <div class="mini-card-icon">
+                        <img src="assets/svg/engenharia_icon.svg" alt="Ícone de engenharia">
+                    </div>
+                    <div class="mini-card-texto">
+                        <p>Engenharia</p>
+                    </div>
+                </a>
+            </div>
+           
+            <div class="servicos-grid-item mini-card">
+                <a href="paginas/servicos/consultoria.html">
+                    <div class="mini-card-icon">
+                        <img src="assets/svg/consultoria_icon.svg" alt="Ícone de Consultoria Jurídica Ambiental">
+                    </div>
+                    <div class="mini-card-texto">
+                        <p>Consultoria Jurídica Ambiental</p>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+        <section id="depoimentos" class="wrapper">
+            <h2 class="titulo-secao">Depoimentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <div class="depoimento-header">
+                                <h3 class="depoimento-header-empresa">Nome da empresa</h3>
+                                <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
+                            </div>
+                            <div class="depoimento-main">
+                                <p>Lorem ipsum dolor sit amet, consectetura adipiscing elit. Sed eu aliquam sapien.
+                                    Proin sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean
+                                    ante lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis
+                                    diam, sagittis dapibus viverra nec, vene natis at enim.</p>
+                            </div>
+                            <div class="depoimento-footer">
+                                <p>Porto Alegre/RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <div class="depoimento-header">
+                                <h3 class="depoimento-header-empresa">Nome da empresa</h3>
+                                <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
+                            </div>
+                            <div class="depoimento-main">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
+                            </div>
+                            <div class="depoimento-footer">
+                                <p>Porto Alegre/RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <div class="depoimento-header">
+                                <h3 class="depoimento-header-empresa">Nome da empresa</h3>
+                                <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
+                            </div>
+                            <div class="depoimento-main">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
+                            </div>
+                            <div class="depoimento-footer">
+                                <p>Porto Alegre/RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <div class="depoimento-header">
+                                <h3 class="depoimento-header-empresa">Nome da empresa</h3>
+                                <h3 class="depoimento-header-nome">Fulano de Tal, cargo da pessoa</h3>
+                            </div>
+                            <div class="depoimento-main">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu aliquam sapien. Proin
+                                    sit amet aliquam felis. Nulla fermentum tortor quis vene natis posuere. Aenean ante
+                                    lacus, convallis in venenatis sit amet, sagit tis id ante. Suspendisse felis diam,
+                                    sagittis dapibus viverra nec, vene natis at enim.</p>
+                            </div>
+                            <div class="depoimento-footer">
+                                <p>Porto Alegre/RS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
+        <section id="ultimos-posts" class="wrapper">
+            <h2 class="titulo-secao">Últimos Posts</h2>
+            <div class="grid-posts">
+
+                <!-- cards para home , servicos e blog -->
+                <div class="card-post">
+                    <a href="./paginas/blog/tarifaBranca.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="./assets/img/Post-Tarifa-Branca-1.jpg" alt="Acessar o post sobre: Tarifa Branca">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Tarifa branca</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>04/05/2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-post">
+                    <a href="./paginas/blog/Ictiofauna.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="./assets/img/Post-Ictiofauna-1.png" alt="Acessar o post sobre: Ictiofauna – Por que monitorar? ">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Ictiofauna – Por que monitorar?</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>05/04/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="./paginas/blog/anfibios.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="./assets/img/Post-Anfibios-1.png" alt="Acessar o post sobre: Anfíbios como bioindicadores da qualidade ambiental">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Anfíbios como bioindicadores da qualidade ambiental</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>05/04/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="detalhe-footer wrapper">
+            <img src="./assets/svg/wave-footer.svg" alt="voltar ao topo">
+        </section>
+        <section class="voltar-ao-topo wrapper">
+            <a href="#header">
+                <img src="assets/svg/arrow-up.svg" alt="Voltar ao topo">
+            </a>
+        </section>
+        <section id="telefones" class="wrapper">
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS">
+                    <p>Rua Darvin Marosin, 210 - Marau/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS">
+                    <p>Rua Coronel Corte Real, 928 - Porto Alegre/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC">
+                    <p>Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC</p>
+                </a>
+            </div>
+        </section>
+        <section id="redes-sociais" class="wrapper">
+            <a href="#"><img src="./assets/svg/linkedinn.svg" alt="Rede Social Soluziona: Linkedin"></a>
+            <a href="#"><img src="./assets/svg/instagram.svg" alt="Rede Social Soluziona: Instagram"></a>
+            <a href="#"><img src="./assets/svg/facebook.svg" alt="Rede Social Soluziona: Facebook"></a>
+        </section>
+        <section id="copyright" class="wrapper">
+            <p class="copyright-text">Todos os direitos reservador 2020 - Soluziona</p>
+        </section>
+    </footer>
+    <!-- main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 4000,
+            },
+            loop:true,
+            dynamicBullets:true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+        
+
+        let numeroDeItensSlide = window.innerWidth <= 768 ? 1 : 2;
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            slidesPerGroup: numeroDeItensSlide,
+            slidesPerView: numeroDeItensSlide,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 15000,
+            },
+        });
+    </script>
+
+    <!-- Initialize GlightBox -->
+    <script src="./js/glightbox.min.js"></script>
+    <script>
+        var lightbox = GLightbox({
+            loop: true,
+            selector: 'soluzionaBox',
+            touchNavigation: true
+        });
+    </script>
+
+</body>
+
+</html>

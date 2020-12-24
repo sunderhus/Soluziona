@@ -1,0 +1,250 @@
+
+.home-slider{
+  overflow: hidden;
+  margin-bottom: 7em;
+  &-item{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+  }
+  &-text{
+   max-width: 700px;
+   margin-bottom: 3em;
+    a{
+      color: $laranja;
+      font-weight: bold;
+      font-size: $regular;
+      margin-left: auto;
+      
+    }
+  }
+  &-img{
+    img{
+      max-width: 100%;
+      border-radius: 1em;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: $azul-escuro;
+    border: 2px solid;
+    opacity: 1;
+    &-active {
+      opacity: 1;
+      background:$azul-escuro;
+      border-color: $azul-escuro;
+    }
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 0px;
+    transform: translateX(0);
+    white-space: nowrap;
+    margin-left: auto;
+    width: fit-content !important;
+    margin-right: auto;
+  }
+  .swiper-pagination-bullets-dynamic {
+    margin-top: 34px;
+  }
+  
+}
+
+section#servicos {
+  display: grid;
+  grid-gap: 2.8em;
+}
+
+.mini-card {
+  display: flex;
+  justify-content: center;
+  padding: 3.5em 4em;
+  border-radius: 1em;
+  position: relative;
+  @include neo-shadow;
+
+  a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 272px;
+
+    .mini-card-icon {
+      margin-bottom: 1em;
+    }
+
+    .mini-card-texto {
+      text-align: center;
+      font-weight: normal;
+      font-size: $regular;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color: $azul-claro;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 22%;
+    }
+  }
+
+  &:hover {
+    animation: fade-in-box-shadow 0.30s linear forwards;
+
+    a:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color: lighten($color: $verde, $amount: 10);
+
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 22%;
+    }
+
+    a:after {
+      background-color: $cinza-claro;
+      animation: grow-from-left 0.45s linear forwards;
+    }
+  }
+}
+
+
+section#ultimos-posts {
+  padding-top: 3em;
+  padding-bottom: 9em;
+  .grid-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 460px));
+    justify-content: center;
+    grid-gap: 3em;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: $branco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width:768px){
+
+  .home-slider{
+    &-img{
+      img{
+        max-width: 700px;
+        border-radius: 1em;
+      }
+    }
+  }
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    &-item:nth-child(1) {
+      display: grid;
+      grid-column: span 2;
+      
+    }
+    .servicos-grid-item .descricao-secao {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .home-slider{
+    &-item{
+      justify-content: center;
+    }
+    &-text{
+      margin-bottom: 2em;
+    }
+    &-text{
+      h2{
+        margin-left: 0em;
+      }
+       a{
+         margin-left: 0em;
+       }
+     }
+  }
+
+ 
+  .home-slider .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+      width: 140px !important;
+      margin-right: unset;
+    }
+}
+@media(min-width:1200px){
+  section#servicos {
+    display: grid;
+    grid-gap: 5em;
+  }
+  .servicos-grid {
+    
+    grid-template-columns: repeat(4, 1fr);
+    &-item{
+      border-radius: 2em;
+
+    }
+    .mini-card-texto {
+      line-height: 1.5em;
+    }
+    &-item:nth-child(1) {
+      display: grid;
+      grid-column: span 2;
+      margin-left: 4em;
+  
+    }
+  
+    &-item:nth-child(4) {
+      grid-column-start: 2;
+    }
+    .servicos-grid-item h2,
+    .servicos-grid-item .descricao-secao {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+@media(min-width:1500px){
+ 
+  .home-slider{
+    &-item{
+      justify-content: space-between;
+    }
+   
+    &-text{
+      h2{
+        margin-left: 1em;
+      }
+       a{
+         margin-left: 3em;
+       }
+     }
+  }
+
+  
+}
+
+@media (min-width:1300px) and (max-width:1600px){
+  section#ultimos-posts .grid-posts {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+  }
+}

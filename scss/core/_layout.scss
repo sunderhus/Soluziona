@@ -1,0 +1,169 @@
+$max-layout-width: 1600px;
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: $cinza-claro;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h2.titulo-secao {
+    font-size: 40px;
+    text-align: left;
+    color: $azul-escuro;
+}
+
+h3.titulo-secao {
+    font-size: 2.25em;
+    text-align: center;
+    color: $azul-escuro;
+    margin-bottom: 1.5em;
+}
+
+h5 {
+    color: $azul-escuro;
+    font-weight: bold;
+    font-size: $grande;
+    margin: 0;
+}
+
+.titulo-pagina {
+    text-align: left;
+    font-size: 55px;
+    color: $azul-escuro;
+}
+
+.descricao-secao {
+    color: $azul-escuro;
+    font-size: $x-regular;
+}
+
+footer {
+    padding: 4em 0px;
+
+    section {
+        max-width: $max-layout-width;
+    }
+
+    flex-shrink: 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+button{
+    cursor: pointer;
+}
+
+button,input,textarea{
+    outline: none;
+    border: 0px;
+}
+button:focus{
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+
+@mixin neo-shadow {
+    box-shadow: -5px -5px 10px #ffffffeb, 5px 5px 10px #00000042;
+}
+
+@mixin neo-shadow-inset {
+    box-shadow: inset -5px -5px 10px #ffffffee, inset 3px 3px 4px #00000040;
+}
+@mixin neo-shadow-inset-azul {
+    box-shadow: inset -5px -5px 10px #0485A4, inset 3px 3px 4px #004F63;
+}
+
+
+
+
+
+.wrapper {
+    max-width: $max-layout-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+a,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: $azul-escuro;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.dont-show{
+    /* para tags que nunca deverão ser exibidas na tela */
+    display: none;
+}
+
+
+@media(min-width:768px) {
+    .wrapper {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    h2.titulo-secao {
+        font-size: $x-grande;
+        text-align: left;
+    }
+
+    .descricao-secao {
+        color: $azul-escuro;
+    }
+
+    .titulo-pagina {
+        font-size: $xx-grande;
+        color: $azul-escuro;
+    }
+
+}
+
+@media(min-width:1200px) {
+    h2.titulo-secao {
+        margin-left: 1em;
+    }
+
+}
+
+@media(min-width:1900px){
+    .wrapper{
+        max-width: 1740px;
+    }
+}

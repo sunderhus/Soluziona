@@ -1,0 +1,787 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluziona - Energia e Meio Ambiente - Licenciamento e Estudos Ambientais</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="../../site.webmanifest">
+    <!-- fivicons Soluziona -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../../assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Soluziona">
+    <meta name="application-name" content="Soluziona">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- CSS SwipeJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- CSS glightbox -->
+    <link rel="stylesheet" href="../../css/glightbox.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <span id="overlayMenu" class="overlay-full-size"></span>
+    <header class="wrapper" id="header">
+        <a class="logo" href="../../index.html" title="Voltar para a página inicial">
+            <img src="../../assets/svg/logo.svg" alt="Logo soluziona" aria-role="logo">
+        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="../../index.html#servicos" title="navegar para Serviços">Serviços</a>
+                </li>
+                <li>
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li>
+                    <a href="../contato/contato.html" title="navegar para Home">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="seletor-idiomas" onclick="toggleIdiomas()">
+            <span>Português</span>
+            <img src="../../assets/svg/arrow-down.svg" alt="Ver mais">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Germany</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-icon" onclick="openNav()"><img src="../../assets/svg/menu-icon.svg"
+                alt="Abrir menu"></span>
+        <div id="menuMobile" class="sidenav">
+            <div class="menu-mobile-head">
+                <h3>Menu</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <ul class="menu-mobile-body">
+                <li class="menu-mobile-item">
+                    <a href="../../index.html" title="navegar para Home">Home</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../about/about.html" title="Página de Sobre">Sobre</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../../index.html#servicos" title="navegar para Home">Serviços</a>
+                    <ul class="sub-items">
+                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos
+                                Ambientais</a></li>
+                        <li class="sub-item-link"><a href="../servicos/engenharia.html">Engenharia</a></li>
+                        <li class="sub-item-link"><a href="../servicos/geoprocessamento.html">Geoprocessamento</a></li>
+                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a
+                                sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica
+                                Ambiental</a></li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../blog/blog.html" title="navegar para o Blog">Blog</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../contato/contato.html" title="navegar para Contato">Contato</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-footer">
+                <div class="menu-mobile-redes-sociais">
+                    <a href="" class="">
+                        <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
+                    </a>
+                    <a href="" class="">
+                        <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                        <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-mobile-idiomas">
+                    <a href="#">Português</a>
+                    <a href="#">English</a>
+                    <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="servico-topo wrapper">
+            <div class="servico-topo-texto">
+                <h2 class="titulo-secao">
+                    Licenciamento e Estudos Ambientais
+                </h2>
+                <a href="../contato/contato.html">
+                    Entrar em contato
+                </a>
+            </div>
+            <div class="servico-topo-imagem">
+                <img src="../../assets/img/Licenciamento-Soluziona.jpg" alt="tartaruga nadando">
+                <section class="wrapper fixed-shape-right">
+                    <img src="../../assets/svg/fixed-wave.svg" alt="simbolo de ondas">
+                </section>
+            </div>
+        </section>
+        <section class="servico-descricao wrapper">
+            <div class="servico-descricao-icon">
+                <img src="../../assets/svg/documentos_icon.svg" alt="ícone de capacete">
+            </div>
+            <div class="servico-descricao-texto">
+                O licenciamento ambiental é um instrumento administrativo pelo qual é exercido o controle sobre as
+                atividades humanas de modo que possa haver uma harmonia entre o desenvolvimento econômico com os
+                recursos naturais, para que seja garantida a sustentabilidade do meio ambiente em seus aspectos físicos,
+                socioculturais e econômicos.<br>
+                <br>
+                É uma exigência legal para qualquer tipo de empreendimento ou atividades que fazem uso de recursos
+                naturais ou que possam causar algum tipo de poluição ou degradação ao meio ambiente.<br>
+                <br>
+                Para obter o licenciamento, a Soluziona conta com equipe multidisciplinar que trabalha em conjunto para
+                que este processo seja ágil e eficaz, de acordo com as normas ambientais e que sejam capazes de prevenir
+                e controlar os possíveis impactos ambientais da instalação e operação do empreendimento para o qual está
+                sendo requerida a licença.<br>
+            </div>
+
+            <div class="detalhe-descricao">
+
+            </div>
+        </section>
+        <!-- accordion com infomações do serviço -->
+        <section class="servico-informacoes wrapper">
+            <h4>Mais informações</h4>
+            <div class="informacoes-accordion">
+                <button class="accordion-titulo">
+                    <span>Estudo de Impacto Ambiental e Relatório de Impacto Ambiental - EIA/RIMA</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>O Estudo de Impacto Ambiental (EIA) é um documento técnico multidisciplinar instituído pela
+                        Resolução do Conselho Nacional de Meio Ambiente - CONAMA Nº 01/86 e tem como objetivo qualificar
+                        e, quando possível, quantificar antecipadamente o impacto ambiental, funcionando como um suporte
+                        para um adequado planejamento de obras ou atividades que venham a interferir no meio ambiente.
+                        Ao constatar esses possíveis impactos, são avaliados as medidas para evitar ou minimizar os
+                        prejuízos que possam ser causados. O estudo é de acesso restrito, respeitando o sigilo
+                        industrial e será estruturado, conforme o Art. 6º da Resolução 01/89 do CONAMA, da seguinte
+                        forma:<br><br>
+
+                        I – Diagnóstico ambiental da área de influência do projeto, completa descrição e análise dos
+                        recursos ambientais e suas interações, tal como existem, de modo a caracterizar a situação
+                        ambiental da área, antes da implantação do projeto, considerando:<br>
+                        a) o meio físico: o subsolo, as águas, o ar e o clima, destacando os recursos minerais, a
+                        topografia, os tipos e aptidões do solo, os corpos d’água, o regime hidrológico, as correntes
+                        marinhas, as correntes atmosféricas;<br>
+                        b) o meio biológico e os ecossistemas naturais – a fauna e a flora, destacando as espécies
+                        indicadoras da qualidade ambiental, de valor científico e econômico, raras e ameaçadas de
+                        extinção e as áreas de preservação permanente;<br>
+                        c) o meio socioeconômico – o uso e ocupação do solo, os usos da água e a socioeconomia,
+                        destacando os sítios e monumentos arqueológicos, históricos e culturais da comunidade, as
+                        relações de dependência entre a sociedade local, os recursos ambientais e a potencial utilização
+                        futura desses recursos.<br>
+                        II – Análise dos impactos ambientais do projeto e de suas alternativas, através de
+                        identificação, previsão da magnitude e interpretação da importância dos prováveis impactos
+                        relevantes, discriminando:<br>
+                        os impactos positivos e negativos (benéficos e adversos), diretos e indiretos, imediatos e a
+                        médio e longo prazos, temporários e permanentes; seu grau de reversibilidade; suas propriedades
+                        cumulativas e sinérgicas; a distribuição dos ônus e benefícios sociais.<br>
+                        III – Definição das medidas mitigadoras dos impactos negativos, entre elas os equipamentos de
+                        controle e sistemas de tratamento de despejos, avaliando a eficiência de cada uma delas.<br>
+                        IV – Elaboração do programa de acompanhamento e monitoramento (os impactos positivos e
+                        negativos, indicando os fatores e parâmetros a serem considerados).<br><br>
+
+                        Já o Relatório de Impacto Ambiental (RIMA) será como um resumo em que serão apresentadas as
+                        conclusões do Estudo de Impacto Ambiental, em linguagem didática, clara e objetiva, para que
+                        qualquer interessado tenha acesso à informação e exerça controle social.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um EIA/RIMA?</span><br>
+                        O EIA/RIMA é exigido na fase de Licença Prévia e conforme o art. 2º da Resolução CONAMA 01/86
+                        deve ser realizado pelas atividades modificadoras do meio ambiente elencadas abaixo:<br>
+                        I – Estradas de rodagem com duas ou mais faixas de rolamento;<br>
+                        II – Ferrovias;<br>
+                        III – Portos e terminais de minério, petróleo e produtos químicos;<br>
+                        IV – Aeroportos, conforme definidos pelo inciso 1, artigo 48, do Decreto-Lei nº 32, de
+                        18.11.66;<br>
+                        V – Oleodutos, gasodutos, minerodutos, troncos coletores e emissários de esgotos sanitários;<br>
+                        VI – Linhas de transmissão de energia elétrica, acima de 230KV;<br>
+                        VII – Obras hidráulicas para exploração de recursos hídricos, tais como: barragem para fins<br>
+                        hidrelétricos, acima de 10MW, de saneamento ou de irrigação, abertura de canais para navegação,
+                        drenagem e irrigação, retificação de cursos d’água, abertura de barras e embocaduras,
+                        transposição de bacias, diques;<br>
+                        VIII – Extração de combustível fóssil (petróleo, xisto, carvão);<br>
+                        IX – Extração de minério, inclusive os da classe II, definidas no Código de Mineração;<br>
+                        X – Aterros sanitários, processamento e destino final de resíduos tóxicos ou perigosos;<br>
+                        Xl – Usinas de geração de eletricidade, qualquer que seja a fonte de energia primária, acima de
+                        10MW;<br>
+                        XII – Complexo e unidades industriais e agroindustriais (petroquímicos, siderúrgicos, cloro
+                        químicos, destilarias de álcool, hulha, extração e cultivo de recursos hídricos);<br>
+                        XIII – Distritos industriais e zonas estritamente industriais – ZEI;<br>
+                        XIV – Exploração econômica de madeira ou de lenha, em áreas acima de 100 hectares ou menores,
+                        quando atingir áreas significativas em termos percentuais ou de importância do ponto de vista
+                        ambiental;<br>
+                        XV – Projetos urbanísticos, acima de 100 ha ou em áreas consideradas de relevante interesse
+                        ambiental a critério da SEMA e dos órgãos municipais e estaduais competentes;<br>
+                        XVI- Qualquer atividade que utilizar carvão vegetal, derivados ou produtos similares, em
+                        quantidade superior a dez toneladas por dia;<br>
+                        XVII – Projetos Agropecuários que contemplem áreas acima de 1.000 ha ou menores, neste caso,
+                        quando se tratar de áreas significativas em termos percentuais ou de importância do ponto de
+                        vista ambiental, inclusive nas áreas de proteção ambiental.<br><br>
+
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento.<br></p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Relatório Ambiental Simplificado - RAS</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Relatório Ambiental Simplificado é um documento exigido na fase de Licença Prévia para
+                        empreendimentos de pequeno porte. Tem como objetivo analisar a viabilidade ambiental, a
+                        localização, instalação e operação de um empreendimento.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um RAS?</span><br>
+                        O RAS é necessário em casos de empreendimentos ou atividades de pequeno porte considerados
+                        potencialmente poluidores ou degradadores do meio ambiente.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento.<br>
+
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Plano Básico Ambiental - PBA</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Plano Básico Ambiental é um documento que traça todas as ações mitigatórias e compensatórias a
+                        serem adotadas pelo empreendedor visando mitigar os impactos ambientais identificados no
+                        EIA/RIMA. Nele serão apresentados os programas de gerenciamento das questões socioambientais
+                        propostos nos estudos ambientais realizados na fase de licença prévia de modo específico para
+                        que possam permitir ações concretas nas fases de instalação e operação dos empreendimentos. É
+                        condicionante para a emissão da licença de instalação de um empreendimento.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um PBA?</span><br>
+                        Empreendimentos ou atividades causadores de alto e significativo potencial de impacto ambiental
+                        ou de degradação do meio ambiente – que foram objeto de EIA/RIMA na fase de Licença Prévia –
+                        serão cobrados pelo PBA na fase de Licença de Instalação.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Relatório e Plano de Controle Ambiental (RCA e PCA)</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Relatório de Controle Ambiental – RCA, originalmente previsto na Resolução CONAMA nº 010/90, é
+                        um documento técnico utilizado para situações em que a apresentação do EIA/RIMA é dispensada.
+                        Já o Plano de Controle Ambiental - PCA é um documento técnico usualmente utilizado para
+                        apresentar os projetos executivos de minimização dos impactos ambientais avaliados na fase
+                        prévia do licenciamento ambiental do empreendimento.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um RCA E
+                            PCA?</span><br>
+                        Costuma-se exigir o RCA e o PCA de empreendimentos ou atividades potencialmente poluidores ou
+                        que degradam o meio ambiente, como: indústrias, sistemas de tratamento de água e esgoto,
+                        comercialização de resíduos, extração mineral, empresas de pequeno e médio porte, entre outras
+                        atividades potencialmente poluidoras.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento.<br>
+
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Relatório Ambiental Preliminar (RAP)</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Relatório Ambiental Preliminar – RAP é um estudo ambiental, elaborado por equipe
+                        multidisciplinar com o intuito de avaliar a viabilidade ambiental de uma atividade ou
+                        empreendimento potencial ou efetivamente causador de degradação ambiental. Contempla análise
+                        qualitativa do meio físico, biótico e socioeconômico e faz uma avaliação dos impactos
+                        decorrentes do empreendimento, com a proposta de ações mitigadoras e de controle ambiental.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um RAP?</span><br>
+                        Este documento deve ser apresentado na fase de Licença Prévia em casos de atividades ou
+                        empreendimentos potencialmente causadores de degradação ambiental ou poluição e servirá de base
+                        para exigência ou não do EIA/RIMA.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Inventário e Levantamento da Flora</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Inventário da Flora consiste na realização de um levantamento detalhado de todas as espécies,
+                        bem como identifica e quantifica o volume de madeira existente na área, com as medidas e
+                        densidades exatas de cada indivíduo com base na altura e diâmetro.
+                        Já o Levantamento da Flora consiste em um estudo técnico que tem como escopo identificar as
+                        espécies da flora presentes em uma determinada área, caracterizando e avaliando o estado de
+                        conservação da vegetação.
+                        Os dados oriundos destes estudos fornecem um importante diagnóstico para a avaliação de impacto
+                        sobre a flora e sobre o meio biótico, além de subsidiar pedidos de autorização de supressão da
+                        vegetação.
+                        São considerados instrumentos de grande importância na conservação da biodiversidade.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um Inventário ou
+                            Levantamento da Flora?</span><br>
+                        Deve ser realizado sempre que houver vegetação na área, assim como nos casos de possível impacto
+                        a vegetação localizada na área de influência direta do local onde estará localizada a atividade
+                        ou empreendimento.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe especializada com grande experiência para a elaboração de inventários ou
+                        levantamentos da flora, que realizam trabalho de qualidade e com precisão de modo que os
+                        resultados possam guiar a tomada de decisões importantes na elaboração e execução dos
+                        projetos.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Inventário e Levantamento de Fauna</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Inventário ou levantamento de fauna consiste em um estudo técnico que visam identificar a
+                        diversidade de espécies de animais ocorrentes em determinada área e determinado período. Além de
+                        caracterizar e avaliar o estado de conservação da biodiversidade e interações ecológicas que
+                        suportam as espécies.
+                        Os estudos podem englobar os peixes (ictiofauna), anfíbios e répteis (herpetofauna), mamíferos
+                        de grande e médio porte (mastofauna) e aves (avifauna).
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um Levantamento da
+                            Fauna?</span><br>
+                        Um inventário ou levantamento de fauna integra um estudo ambiental, tornando-se um instrumento
+                        para avaliação de impactos ao meio biótico e outros possíveis impactos decorrentes.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Contamos com profissionais capacitados e com grande experiência na realização de inventários de
+                        fauna, sempre prezando pelo cuidado com o meio-ambiente.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Programas Ambientais</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Os Programas Ambientais são uma série de medidas mitigadoras para os impactos ambientais que
+                        devem ser realizadas periodicamente nos períodos de instalação, ampliação e operação de
+                        empreendimentos e atividades. Necessitam ser bem definidos, apresentando seu escopo, prazos,
+                        metas, responsáveis, além de um cronograma de execução. Podem fazer parte do Plano Básico
+                        Ambiental - PBA ou podem ser exigidos separadamente.
+
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Quem precisa de um Programa
+                            Ambiental?</span><br>
+                        O Programa Ambiental pode fazer parte de um Plano Básico Ambiental - PBA em casos em que foi
+                        realizado o EIA/RIMA e que são considerados de alto potencial poluidor ou em casos onde foram
+                        realizados outros estudos ambientais mas que ainda assim precisam de programas específicos para
+                        mitigar os impactos. Os Programas são definidos e exigidos pelo órgão responsável nas Licenças
+                        emitidas.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada para avaliação ambiental, levando em consideração
+                        as variáveis de cada empreendimento de modo que possamos identificar as melhores soluções para o
+                        atendimento satisfatório de todas as condicionantes do Licenciamento, desde a sua elaboração,
+                        implantação até a sua execução.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Gestão Ambiental de Obras e Empreendimentos</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Atuamos na gestão de obras nas fases de projeto, instalação e operação de empreendimentos,
+                        garantindo que os impactos ambientais decorrentes das atividades possam ser controlados e
+                        minimizados desde a concepção do projeto, de modo que as condicionantes definidas no processo de
+                        licenciamento sejam todas cumpridas de forma correta e de acordo com a legislação.
+
+                        <br><br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica capacitada e com vasta experiência para realizar a gestão ambiental de
+                        obras e empreendimentos.<br>
+                    </p>
+                </div>
+
+
+                <button class="accordion-titulo">
+                    <span>Monitoramento Ambiental</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Monitoramento Ambiental atua como instrumento de suma importância para atestar a eficiência
+                        das medidas de controle ambiental apresentadas nos Programas exigidos nas licenças pelos órgãos
+                        responsáveis. Com os monitoramentos é possível prevenir danos e corrigir possíveis não
+                        conformidades.
+                        Os monitoramentos são realizados por equipes técnicas especializadas que vão à campo
+                        periodicamente e registram as medidas adotadas, bem como avaliam e reportam a necessidade de
+                        quaisquer correções. Além disso, a Soluziona é uma empresa pioneira no uso da mais alta
+                        tecnologia em Vant para executar e auxiliar o monitoramento ambiental e de sistemas elétricos.
+                        Em alguns casos, como o monitoramento da qualidade da água, são necessárias coletas e amostras,
+                        as quais são enviadas para laboratório especializado terceirizado que realizam as análises
+                        necessárias.
+                        <br><br>
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe multidisciplinar capacitada e com vasta experiência para realizar o
+                        monitoramento ambiental, contando ainda com o auxílio dos Monitoramentos com a mais alta
+                        tecnologia em Vant e levando em consideração as variáveis de cada empreendimento de modo que
+                        possamos identificar as melhores soluções para o atendimento satisfatório de todas as
+                        condicionantes do Licenciamento.<br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Plano de Recuperação de Área Degradada - PRAD</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Plano de Recuperação de Áreas Degradadas – PRAD se refere a um conjunto de procedimentos a
+                        serem executados a fim de recompor a área degradada para o restabelecimento da função original
+                        do ecossistema e retomar o equilíbrio em áreas que sofreram degradação.<br><br>
+
+                        É neste documento que serão apresentadas informações, diagnósticos, levantamentos e estudos que
+                        possibilitam a avaliação das alterações ou degradações ocorridas, além de definir as ações
+                        adequadas para a recuperação da área. Os métodos de recuperação deverão ser definidos de acordo
+                        com as características do local e conhecimento sobre o impacto causado, levando em consideração
+                        suas peculiaridades e visando proteger a área de possíveis fatores que possam prejudicar o
+                        restabelecimento da qualidade ambiental.<br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica especializada e com vasta experiência na elaboração de Planos de
+                        Recuperação de Área Degradada - PRAD, bem como capacitada para sua execução.
+                        <br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Plano Ambiental de Uso e Conservação do Entorno de Reservatórios Artificiais - PACUERA</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Plano Ambiental de Conservação e Uso do Entorno de Reservatório Artificial (PACUERA) é uma
+                        ferramenta de planejamento ambiental orientador, dentro do processo de licenciamento ambiental,
+                        para o zoneamento e ocupação do solo no entorno do reservatório. Tem como objetivo orientar o
+                        uso disciplinado do reservatório de acordo com a legislação e normas operativas do
+                        empreendimento e com os estudos de fragilidade e planos ambientais existentes, visando à
+                        conservação ambiental dos recursos hídricos. Deverá ser realizado de modo em que as atividades
+                        antrópicas não afetem a proteção ambiental, abrangendo os meios físico, biótico e
+                        socioeconômico.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica multidisciplinar especializada e com vasta experiência na elaboração e
+                        execução de Plano Ambiental de Uso e Conservação do Entorno de Reservatórios Artificiais -
+                        PACUERA, de modo que possamos integrar de maneira eficiente e harmônica todos os meios, físico,
+                        biótico e socioeconômico.
+                        <br>
+
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Programa de Educação Ambiental</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Conforme a Lei nº 9.795 de 1999, cabe às empresas, entidades de classe, instituições públicas e
+                        privadas promover programas de educação ambiental à seus trabalhadores, visando ao controle e
+                        melhoria do ambiente de trabalho e dos processos produtivos que impactam o meio ambiente.
+                        Já no âmbito do licenciamento ambiental, o papel deste programa visa mitigar impactos
+                        decorrentes do empreendimento.<br>
+                        A Educação Ambiental é baseada em processos por meio dos quais o indivíduo e a coletividade
+                        constroem valores sociais, conhecimentos, habilidades, atitudes e competências voltadas para a
+                        conservação do meio ambiente, qualidade de vida e sustentabilidade.
+
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica multidisciplinar especializada e com vasta experiência na elaboração e
+                        execução de Programa de Educação Ambiental, de modo que possamos transmitir conhecimento sobre o
+                        meio ambiente e sustentabilidade de forma objetiva e dinâmica para o público-alvo.
+                        <br>
+
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Plano de Gerenciamento de Resíduos Sólidos - PGRS</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é um instrumento para comprovar a capacidade
+                        de uma empresa de gerir todos os resíduos que eventualmente venha a gerar. Tem como objeto
+                        minimizar a geração de resíduos, proporcionar um encaminhamento seguro e correto para os
+                        resíduos gerados e proteger os trabalhadores, a saúde pública, os recursos naturais e o meio
+                        ambiente.<br>
+                        Todos os empreendimentos que geram resíduos e possam causar danos ao meio ambiente ou à saúde
+                        pública, indiferente do seu porte ou ramo de atividade, devem ter um PGRS.
+
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Possuímos equipe técnica especializada e com vasta experiência na elaboração de Plano de
+                        Gerenciamento de Resíduos Sólidos - PGRS, de maneira que os impactos ambientais, sociais e
+                        legais sejam minimizados.
+
+                        <br>
+
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Outorga de Uso da Água</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Outorga de água é o instrumento legal que assegura ao usuário o direito de utilizar os recursos
+                        hídricos. Através do processo de outorga, garante-se o controle quantitativo e qualitativo do
+                        uso da água, permitindo uma distribuição adequada e controlada desse recurso a sociedade.. As
+                        modalidades de outorgas são: Subterrâneas que incluem poços artesianos e cisternas e outorga
+                        Superficial que incluem nascente, rios, córregos e barragens.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Contamos com equipe técnica multidisciplinar com experiência na realização deste serviço, para
+                        cuidar de todos os trâmites legais do processo de Outorga de Água.
+                        <br>
+                    </p>
+                </div>
+
+                <button class="accordion-titulo">
+                    <span>Estudos Socioeconômicos</span>
+                    <img src="../../assets/svg/double-arrow-down.svg" alt="expandir/contrair">
+                </button>
+                <div class="accordion-descricao">
+                    <p>
+                        Este estudo busca clarificar as possíveis consequências decorrentes da implantação de um
+                        empreendimento que virá a interferir de forma positiva ou negativa a comunidade localizada em
+                        seu entorno. Além de determinar as ações mais adequadas para minimizar os danos humanos e
+                        aproveitar ao máximo os benefícios decorrentes do empreendimento.
+                        <br><br>
+
+                        <span style="color:rgb(18, 155, 219);font-weight: bold;">Nosso diferencial</span><br>
+                        Contamos com equipe técnica multidisciplinar com experiência na realização deste estudo, para
+                        que seja possível compreender a fundo as dinâmicas da população afetada, além de apresentar
+                        medidas para minimizar os possíveis impactos negativos que esse grupo de pessoas possa vir a
+                        sofrer.
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- banner azul de call to action -->
+        <section class="call-to-action wrapper">
+            <a href="../contato/contato.html">
+                <span>
+                    Ficou interessado em neste serviço?<br>
+                    Entre em contato com nossa equipe para mais informações.
+                </span>
+            </a>
+        </section>
+        <!-- Posts relacionados  -->
+        <section id="ultimos-posts" class="wrapper">
+            <h3 class="titulo-secao">Posts relacionados com este serviço</h3>
+            <div class="grid-posts">
+                <!-- cards para home , servicos e blog -->
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/folhagens.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/abelha.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-post">
+                    <a href="../blog/single.html">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-main">
+                            <img src="../../assets/img/pequeno_inseto.png" alt="Projeto Morro grande">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-descricao">
+                                <h3>Título do post aqui em até duas linhas, depois terá reticências</h3>
+                            </div>
+                            <div class="card-footer-data">
+                                <p>00/00/2020</p>
+                            </div>
+
+                        </div>
+                        <div class="card-gallery">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="detalhe-footer wrapper">
+            <img src="../../assets/svg/wave-footer.svg" alt="voltar ao topo">
+        </section>
+        <section class="voltar-ao-topo wrapper">
+            <a href="#header">
+                <img src="../../assets/svg/arrow-up.svg" alt="Voltar ao topo">
+            </a>
+        </section>
+        <section id="telefones" class="wrapper">
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS">
+                    <p>Rua Darvin Marosin, 210 - Marau/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS">
+                    <p>Rua Coronel Corte Real, 928 - Porto Alegre/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC">
+                    <p>Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC</p>
+                </a>
+            </div>
+        </section>
+        <section id="redes-sociais" class="wrapper">
+            <a href="#"><img src="../../assets/svg/linkedinn.svg" alt="Rede Social Soluziona: Linkedin"></a>
+            <a href="#"><img src="../../assets/svg/instagram.svg" alt="Rede Social Soluziona: Instagram"></a>
+            <a href="#"><img src="../../assets/svg/facebook.svg" alt="Rede Social Soluziona: Facebook"></a>
+        </section>
+        <section id="copyright" class="wrapper">
+            <p class="copyright-text">Todos os direitos reservador 2020 - Soluziona</p>
+        </section>
+    </footer>
+    <!-- main JS -->
+    <script src="../../js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 10000,
+            },
+            loop: true,
+            dynamicBullets: true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

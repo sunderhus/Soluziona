@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: stretch;
+    padding: 4em 0px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 2em;
+    max-width: 1800px;
+
+    .logo {
+        max-width: 192px;
+        margin-right: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .menu-desktop {
+        display: none;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-right: 2em;
+                margin-bottom: 0.5em;
+                position: relative;
+                line-height: toEm(22);
+            }
+        }
+    }
+
+
+    nav.seletor-idiomas {
+        font-weight: bold;
+        margin-right: 2em;
+        color: #272749;
+        position: relative;
+        cursor: pointer;
+        display: none;
+
+        &.active {
+            img {
+                transform: rotate(180deg) translateX(0.8em);
+                transform-origin: center center;
+                transition: transform 0.3s linear;
+
+            }
+
+            ul {
+                display: block;
+            }
+        }
+
+        img {
+            transition: transform 0.3s linear;
+            position: absolute;
+            top: 1.5em;
+            left: 50%;
+            transform: translateX(-0.8em);
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            top: 1.5em;
+            left: 0px;
+            padding: 0px;
+            line-height: 1.5em;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    header .logo {
+        max-width: 292px;
+    }
+
+    nav.menu-desktop {
+        display: inline;
+    }
+   
+}
+
+@media(min-width:900px) {
+
+    header nav.seletor-idiomas {
+        display: block;
+    }
+    header .menu-desktop ul li{
+        margin-bottom: 0px;
+    }
+    header .menu-desktop ul li:hover:before{
+        content: '';
+        position: absolute;
+        width: 120%;
+        bottom: toEm(12)*-1;
+        left: -10%;
+        height: toEm(3);
+        background-color: $azul-transparente;
+        animation: link-menu-desktop 0.25s linear 0s 1 forwards;
+    }
+}

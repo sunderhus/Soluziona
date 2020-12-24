@@ -1,0 +1,392 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluziona - Energia e Meio Ambiente - Sobre Nós</title>
+    <!-- Manifest configuration -->
+    <link rel="manifest" href="../../site.webmanifest">
+    <!-- fivicons Soluziona -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="../../assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Soluziona">
+    <meta name="application-name" content="Soluziona">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- CSS SwipeJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- CSS glightbox -->
+    <link rel="stylesheet" href="../../css/glightbox.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <span id="overlayMenu" class="overlay-full-size"></span>
+    <header class="wrapper" id="header">
+        <a class="logo" href="../../index.html" title="Voltar para a página inicial">
+            <img src="../../assets/svg/logo.svg" alt="Logo soluziona" aria-role="logo">
+        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="../../index.html#servicos" title="navegar para Serviços">Serviços</a>
+                </li>
+                <li>
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li>
+                    <a href="../contato/contato.html" title="navegar para Home">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="seletor-idiomas" onclick="toggleIdiomas()">
+            <span>Português</span>
+            <img src="../../assets/svg/arrow-down.svg" alt="Ver mais">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Germany</a></li>
+            </ul>
+        </nav>
+        <span class="mobile-menu-icon"onclick="openNav()"><img src="../../assets/svg/menu-icon.svg" alt="Abrir menu"></span>
+        <div id="menuMobile" class="sidenav">
+            <div class="menu-mobile-head">
+                <h3>Menu</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+            </div>
+            <ul class="menu-mobile-body">
+                <li class="menu-mobile-item">
+                    <a href="../../index.html" title="navegar para Home">Home</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../about/about.html" title="Página de Sobre">Sobre</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../../index.html#servicos" title="navegar para Home">Serviços</a>
+                    <ul class="sub-items">
+                        <li class="sub-item-link"><a href="../servicos/licenciamento.html">Licenciamento e Estudos Ambientais</a></li>
+                        <li class="sub-item-link"><a href="../servicos/engenharia.html">Engenharia</a></li>
+                        <li class="sub-item-link"><a href="../servicos/geoprocessamento.html">Geoprocessamento</a></li>
+                        <li class="sub-item-link"><a href="../servicos/ecoinovacao.html">Ecoinovação para a sustentabilidade</a></li>
+                        <li class="sub-item-link"><a href="../servicos/consultoria.html">Consultoria Jurídica Ambiental</a></li>
+                    </ul>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../portifolio/portifolio.html" title="navegar para Portifólio">Portifólio</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../blog/blog.html" title="navegar para o Blog">Blog</a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="../contato/contato.html" title="navegar para Contato">Contato</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-footer">
+                <div class="menu-mobile-redes-sociais">
+                    <a href="" class="">
+                        <img src="../../assets/svg/facebook_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="" class="">
+                        <img src="../../assets/svg/intagram_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="" class="">
+                        <img src="../../assets/svg/linkedinn_icon_branco.svg" alt="">
+                    </a>  
+                    <a href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                        <img src="../../assets/svg/whatsapp_icon_branco.svg" alt="">
+                    </a>  
+                </div>
+                <div class="menu-mobile-idiomas">
+                    <a href="#">Português</a>
+                    <a href="#">English</a>
+                    <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <h2 class="titulo-pagina">
+                Sobre Nós
+            </h2>
+        </section>
+        <!-- valores e missão -->
+        <section class="about-topo wrapper">
+            <div class="about-topo-texto">
+                <p class="about-descricao">
+                    A Soluziona é uma empresa especializada em Soluções em Energia e Meio Ambiente fundada em 2006 com o propósito de atender a crescente demanda da sociedade por soluções ágeis e eficientes na área, por meio de assessoria técnica especializada e em constante aprimoramento.<br><br>
+
+                    Contamos com uma equipe técnica e operacional multidisciplinar de elevada qualificação profissional, focada em criar soluções personalizadas e individuais para cada empreendimento com expertise, agilidade e segurança jurídica. Buscamos proporcionar um atendimento especializado, entendendo que cada projeto é único e a análise integral e detalhada de suas etapas é a chave para um processo consolidado.<br>
+                </p>
+                <div class="detalhe-descricao-verde"></div>
+            </div>
+            <div class="about-topo-imagem">
+                <img src="../../assets/svg/Selo_de_qualidade_soluziona.svg" alt="Selo de qualidade Soluziona">
+            </div>
+        </section>
+        <section class="valores-grid wrapper">
+            <div class="valor">
+                <h5>
+                    Missão
+                </h5>
+                <p>
+                    Fornecer soluções personalizadas, economicamente viáveis e 
+                    tecnicamente apropriadas, capazes de satisfazer as necessidades 
+                    dos nossos Clientes e Parceiros, atuando sempre com respeito ao 
+                    meio ambiente e a legislação ambiental de modo que possam 
+                    alcançar o desenvolvimento sustentável.
+                </p>
+            </div>
+            <div class="valor">
+                <h5>
+                    Visão
+                </h5>
+                <p>
+                    Consolidar nossa atuação na área de Consultoria ambiental e Engenharia por meio da qualidade técnica, credibilidade e eficiência. Buscando satisfazer as necessidades dos clientes e parceiros com soluções diferenciadas e personalizadas baseadas no compromisso de responsabilidade social e desenvolvimento sustentável.
+                </p>
+            </div>
+        </section>
+        <!-- diferenciais da empresa -->
+        <section class="wrapper diferenciais-empresa">
+            <h5>Diferenciais</h3>
+            <div class="diferenciais">
+                <ul class="diferenciais-listagem">
+                    <li class="diferenciais-item">
+                        <div class="numero">
+                            <span>1</span>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Equipe: A Soluziona possui em seu quadro funcional profissionais especializados e multidisciplinares, que combinados nos fornecem o know how dos serviços prestados e nos favorece na hora de criar soluções inovadoras e eficazes com agilidade.
+                            </p>
+                        </div>
+                    </li>
+                  
+                    <li class="diferenciais-item">
+                        <div class="numero">
+                           <span>2</span>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Inovação: Realizamos acompanhamento contínuo do que há de vanguarda pelo mundo com o intuito de prover serviços customizados e inovadores para nossos Clientes e Parceiros.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="diferenciais-item">
+                        <div class="numero">
+                           <span>3</span>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Sustentabilidade: O objetivo do desenvolvimento sustentável é preservar o planeta e as necessidades humanas. Por este motivo, na Soluziona os stakeholders são envolvidos na execução das nossas atividades, incluindo as atividades de educação ambiental e responsabilidade social. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="diferenciais-item">
+                        <div class="numero">
+                           <span>4</span>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Integração: Todo o nosso trabalho consiste em um processo criativo de integração entre o meio ambiente e cada empreendimento em análise.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="diferenciais-item">
+                        <div class="numero">
+                           <span>5</span>
+                        </div>
+                        <div class="texto">
+                            <p>
+                                Resultados: A combinação de todos os tópicos citados acima, faz com que atingimos resultados satisfatórios e os aprendizados de cada projetos ficam como parte do nosso legado e experiência profissional.
+                            </p>
+                        </div>
+                    </li>
+                  
+                </ul>
+                <div class="diretoria">
+                    <img src="../../assets/img/exemplo-homem-sobre.png" alt="Diretoria Soluziona">
+                    <p class="legenda">Marlon Bonamigo, presidente da Soluziona.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Colaboradores Soluziona -->
+        <section class="nossa-equipe">
+            <div class="fixed-shape" id="paralax">
+                <img src="../../assets/svg/fixed-wave.svg" alt="simbolo de ondas">
+            </div>
+            <div class="wrapper">
+                <h3 class="titulo-secao">
+                    Conheça parte da nossa equipe
+                </h3>
+                <div class="grid-colaboradores">
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Catiusa-Rosin-Biologa.jpg" alt="Catiusa Rosin - Bióloga">
+                        <p class="nome">Catiusa Rosin</p>
+                        <p class="profissao">Bióloga</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Fabio-Lovat-Tecnico-em-Meio-Ambiente.jpg" alt="Fabio Lovat - Tecnico em Meio Ambiente">
+                        <p class="nome">Fabio Lovat</p>
+                        <p class="profissao">Técnico em Meio Ambiente</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Landis-Petersen-Engenheiro-Sanitarista-e-Ambiental.jpg" alt="Landis Petersen - Engenheiro Sanitarista e Ambiental">
+                        <p class="nome">Landis Petersen </p>
+                        <p class="profissao">Engenheiro Sanitarista e Ambiental</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Natalia-Ferrazza-Engenheira-Civil.jpg" alt="Natália Ferrazza - Engenheira Civil">
+                        <p class="nome">Natália Ferrazza</p>
+                        <p class="profissao">Engenheira Civil</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Rafael-Weirich-Biologo.jpg" alt="Rafael Weirich - Biólogo">
+                        <p class="nome">Rafael Weirich </p>
+                        <p class="profissao">Biólogo</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Thais-Morrete-Biologa.jpg" alt="Thaís Morrete - Bióloga">
+                        <p class="nome">Thaís Morrete </p>
+                        <p class="profissao">Bióloga</p>
+                    </div>
+                    <!-- colaborador -->
+                    <div class="colaborador">
+                        <img src="../../assets/img/equipe/Zenon-Ratzlaff-Junior-Biologo.jpg" alt="Zenon Ratzlaff Júnior - Biólogo">
+                        <p class="nome">Zenon Ratzlaff Júnior </p>
+                        <p class="profissao">Biólogo</p>
+                    </div>
+                    
+                    <!-- convite para novo colaborador-->
+                    <div class="colaborador convite">
+                        <a class="convite-link" href="#" target="_self" title="enviar currículo">
+                            <p>Você</p>
+                            <p>
+                                Quer fazer parte da nossa equipe?
+                                Envie seu currículo.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="detalhe-footer wrapper">
+            <img src="../../assets/svg/wave-footer.svg" alt="voltar ao topo">
+        </section>
+        <section class="voltar-ao-topo wrapper">
+            <a href="#header">
+                <img src="../../assets/svg/arrow-up.svg" alt="Voltar ao topo">
+            </a>
+        </section>
+        <section id="telefones" class="wrapper">
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Darvin Marosin, 210 - Marau/RS">
+                    <p>Rua Darvin Marosin, 210 - Marau/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rua Coronel Corte Real, 928 - Porto Alegre/RS">
+                    <p>Rua Coronel Corte Real, 928 - Porto Alegre/RS</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a class="numero"
+                    href="https://wa.me/5551999999999?text=Ol%C3%A1,%20Gostaria%20solicitar%20um%20or%C3%A7amento.">
+                    <img src="../../assets/svg/whatsapp_icon.svg" alt="Ícone WhatsApp">
+                    <p>+55 51 99999-9999</p>
+                </a>
+                <a class="endereco" href="http://maps.google.com/?q=Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC">
+                    <p>Rod. Amaro Antônio Vieira, 1866 - Florianópolis/SC</p>
+                </a>
+            </div>
+        </section>
+        <section id="redes-sociais" class="wrapper">
+            <a href="#"><img src="../../assets/svg/linkedinn.svg" alt="Rede Social Soluziona: Linkedin"></a>
+            <a href="#"><img src="../../assets/svg/instagram.svg" alt="Rede Social Soluziona: Instagram"></a>
+            <a href="#"><img src="../../assets/svg/facebook.svg" alt="Rede Social Soluziona: Facebook"></a>
+        </section>
+        <section id="copyright" class="wrapper">
+            <p class="copyright-text">Todos os direitos reservador 2020 - Soluziona</p>
+        </section>
+    </footer>
+    <!-- main JS -->
+    <script src="../../js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+
+        var topSlider = new Swiper('.swiper-container-top', {
+            spaceBetween: 320,
+            autoplay: {
+                slidesPerView: 1,
+                delay: 10000,
+            },
+            loop:true,
+            dynamicBullets:true,
+            pagination: {
+                el: '.swiper-pagination-top',
+                dynamicBullets: true,
+            },
+        });
+        
+
+        let numeroDeItensSlide = window.innerWidth <= 768 ? 1 : 2;
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            slidesPerGroup: numeroDeItensSlide,
+            slidesPerView: numeroDeItensSlide,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 15000,
+            },
+        });
+    </script>
+    <!-- Initialize GlightBox -->
+    <script src="../../js/glightbox.min.js"></script>
+    <script>
+        var lightbox = GLightbox({
+            loop: true,
+            selector: 'soluzionaBox',
+            touchNavigation: true
+        });
+    </script>
+</body>
+
+</html>

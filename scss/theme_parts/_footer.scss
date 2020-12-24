@@ -1,0 +1,94 @@
+footer{
+    background-color: $azul-escuro;
+    
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &.detalhe-footer {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0px auto;
+            position: relative;
+            top: -6.7em;
+            
+            background-size: cover;
+            max-width: 100%;
+            background-color: #f3f3f300;
+            background-position: center;
+        }
+        
+        &.voltar-ao-topo{
+            position: relative;
+            padding-top: 0px;
+            top: -4em;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 2em;
+                width: 100%;
+                &:hover img{
+                    animation: bounce-up 0.85s linear 0s infinite ;
+                }
+            }
+        }
+
+        &#telefones{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(auto,400px));
+            grid-gap: 2em;
+            padding: 0px 1em;
+            justify-content: space-around;
+            justify-items: center;
+            .contato{
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+            }
+            a{
+                color: $branco;
+                &.numero{
+                    font-size: $regular;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        margin-right: 0.5em;
+                    }
+                }
+                &.endereco{
+                    font-weight: normal;
+                    font-size: $x-pequena;
+                    text-align: center;
+                }   
+            }
+        }
+        &#redes-sociais{
+            margin-top: calc(60px - 1em);
+            margin-bottom: calc(60px - 1em);
+            a{
+                padding: 1em;
+            }
+        }
+        &#copyright{
+            .copyright-text{
+                color: $branco;
+                font-size: $xs-pequena;
+            }
+        }
+    }
+   
+}
+
+@media(min-width:1500px){
+    .contato{
+        &:first-child{
+            align-items: flex-start;
+        }
+        &:last-child{
+            align-items: flex-end;
+        }
+    }
+
+}

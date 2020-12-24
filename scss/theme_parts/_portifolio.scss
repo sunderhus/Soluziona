@@ -1,0 +1,33 @@
+.topo-portifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 2em;
+    h2{
+        margin-left: 0;
+    }
+    .portifolio-descricao{
+        max-width:34em;
+        height: auto;
+        color:$azul-escuro;
+        font-size: $regular;
+       
+    }
+}
+.wrapper.call-to-action-portifolio{
+    margin-top: 0;
+}
+.depoimentos-portifolio{
+    margin-bottom: 7em;
+}
+
+@media(min-width:1200px){
+    .topo-portifolio{
+        margin-bottom: 7em;
+    }
+    .portifolio-descricao{
+        text-align: center;
+        font-size: $x-regular;
+    }
+}
